@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-size: cover;
+  background-color: #6e2be2;
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 1200px) {
+  html {
+    background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
+    background-size: cover;
+    background-color: #6e2be2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+html body {
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+html body .logo {
+  height: 10px;
+  margin: 1rem;
+}
+html body .logo img {
+  width: 300px;
+}
+html body .container-txt {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+html body .container-txt h3 {
+  padding-top: 0.7rem;
+  font-size: 22px;
+}
+html body .container-txt .win {
+  padding: 0.5rem;
+  width: 130px;
+  margin: auto;
+}
+html body .container-txt .win p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5px;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  margin: 0.3rem;
+  background-color: darkblue;
+  opacity: 80%;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+html body .container-txt .mill {
+  display: flex;
+  flex-flow: column;
+  width: 150px;
+  padding: 7px;
+  margin: auto;
+  margin-top: 1rem;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border: 0.5px solid #fff;
+  background-color: goldenrod;
+  opacity: 95%;
+  box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
+}
+html body #play {
+  height: 45px;
+  width: 200px;
+  color: #fff;
+  background-color: #61e713;
+  border-radius: 50%;
+  border: 1px solid white;
+  cursor: pointer;
+  text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+}
+html body #play:hover {
+  background-color: #88e751;
+  box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.981);
+  font-size: 17px;
+}
