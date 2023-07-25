@@ -8,20 +8,36 @@
 
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
-let stage = 0
+let stage = 0;
 
-function checkAnswer() {
-    
-    const correctAnswer = true;
-    const wrongAnswer = false;
+function checkAnswer(questionId: string, userAnswer: string): boolean {
+    const question = questionsArray.find(q => q.id === questionId);
 
-    if (correctAnswer) {
-        stage++;
+    if (!question) {
+        throw new Error("Invalid question ID");
     }
-    else if (wrongAnswer) {
+
+    const correctAnswer = question.correctAnswer;
+
+    if (userAnswer === correctAnswer) {
+        stage++;
+        return true;
+    } else {
         stage--;
+        return false;
     }
 }
+
+const userAnswer = "Bogota";
+const isAnswerCorrect = checkAnswer("1", userAnswer);
+
+if (isAnswerCorrect) {
+    console.log("Congratulations! Your answer is correct.");
+} else {
+    console.log("Oops! Your answer is incorrect.");
+}
+
+console.log("Current stage:", stage);
 
 //handleWin function - מה קורה כשנבחרה תשובה נכונה
 
