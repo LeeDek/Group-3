@@ -6,3 +6,4 @@ function idGenerator() {
     console.error(error);
   }
 }
+//
