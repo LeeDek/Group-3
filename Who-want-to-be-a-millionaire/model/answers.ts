@@ -19,5 +19,4 @@ const answers: Answer[] = [
     answerText: `4-Lorem, ipsum dolor sit amet consectetur adipisicing elit.`,
     answerId: `id-${idGenerator()}`,
   },
-  
 ];
