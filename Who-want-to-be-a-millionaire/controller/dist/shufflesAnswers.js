@@ -5,7 +5,7 @@ var __spreadArrays = (this && this.__spreadArrays) || function () {
             r[k] = a[j];
     return r;
 };
-// This function takes four answers, shuffles them, and returns them in a different order
+// This function takes X answers, shuffles them, and returns them in a different order
 function shufflesAnswers(answers) {
     try {
         var shuffledAnswers = [];

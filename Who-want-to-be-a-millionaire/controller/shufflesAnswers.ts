@@ -1,4 +1,4 @@
-// This function takes four answers, shuffles them, and returns them in a different order
+// This function takes X answers, shuffles them, and returns them in a different order
 function shufflesAnswers(answers: Array<Answer>) {
   try {
     const shuffledAnswers: Array<Answer> = [];
