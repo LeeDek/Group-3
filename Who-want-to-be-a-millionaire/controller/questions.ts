@@ -27,7 +27,7 @@ interface Question {
     correctAnswer: string;
 }
 
-const questionsArray: Question = [
+const questionsArray: Question[] = [
 
     {
         uid: generateUid(),
@@ -129,8 +129,6 @@ const questionsArray: Question = [
     correctAnswer: "Asia",
 }
 ];
-
-
 
 
 interface Answers {

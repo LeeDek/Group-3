@@ -8,5 +8,22 @@
 
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
+let stage = 0
 
+function checkAnswer() {
+    
+    const correctAnswer = true;
+    const wrongAnswer = false;
+
+    if (correctAnswer) {
+        stage++;
+    }
+    else if (wrongAnswer) {
+        stage--;
+    }
+}
+
+//handleWin function - מה קורה כשנבחרה תשובה נכונה
+
+//handleLose function - מה קורה כשנבחרה תשובה לא נכונה
 
