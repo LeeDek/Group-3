@@ -10,7 +10,6 @@ function shufflesAnswers(answers) {
     try {
         var shuffledAnswers = [];
         var newAnswer = __spreadArrays(answers);
-        debugger;
         for (var i = 0; i < answers.length; i++) {
             var tempAnswer = Math.floor(Math.random() * answers.length);
             if (newAnswer[tempAnswer] !== undefined) {
