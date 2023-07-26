@@ -11,7 +11,7 @@ html {
   height: 100vh;
   color: #fff;
 }
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
   html {
     background-image: url(/Who-want-to-be-a-millionaire/images/match-stars-mobile-final.jpg);
     background-size: cover;

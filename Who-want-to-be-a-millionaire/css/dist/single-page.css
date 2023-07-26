@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-size: cover;
+  background-color: #6e2be2;
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 1200px) {
+  html {
+    background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
+    background-size: cover;
+    background-color: #6e2be2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+html body {
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+html body .container__headline {
+  margin-top: 2rem;
+}
+html body .container__money {
+  float: right;
+  margin-right: 10rem;
+  margin-top: 0rem;
+  margin-bottom: 2rem;
+}
+html body .container__money .win {
+  padding: 0.5rem;
+  width: 150px;
+  margin: auto;
+}
+html body .container__money .win p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2px;
+  font-size: 18px;
+  border: 1px solid #fff;
+  border-radius: 15%;
+  margin: 0.2rem;
+  background-color: darkblue;
+  opacity: 80%;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+html body .container__money .mill {
+  display: flex;
+  flex-flow: column;
+  width: 160px;
+  padding: 7px;
+  margin: auto;
+  margin-top: 1rem;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border: 0.5px solid #fff;
+  background-color: goldenrod;
+  opacity: 95%;
+  box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
+}
+html body .container__money #play {
+  height: 50px;
+  width: 200px;
+  color: #fff;
+  background-color: #61e713;
+  border-radius: 25%;
+  border: 1px solid white;
+  cursor: pointer;
+  text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+  font-size: larger;
+}
+html body .container__money #play:hover {
+  background-color: #88e751;
+  box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.981);
+  font-size: 17px;
+  font-size: larger;
+}
+html body .question {
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
+html body .question__text {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 15vh;
+  border-radius: 15%;
+  padding: 0.5rem;
+  display: flex;
+  background-color: darkblue;
+  opacity: 80%;
+  border: #fff solid 3px;
+}
+html body .question__answers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 2rem;
+  gap: 20px;
+}
+html body .question__answers .a, html body .question__answers .b, html body .question__answers .c, html body .question__answers .d {
+  width: 35vh;
+  border-radius: 15%;
+  padding: 10px;
+  border: #fff solid 3px;
+  background-color: darkblue;
+  opacity: 80%;
+}
+html body .question__answers .d {
+  background-color: #39eb25;
+}
