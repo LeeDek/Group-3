@@ -1,3 +1,4 @@
+var audioPlayed = false; // Flag to track if audio has played
 function playSound() {
     console.log("Trying to play audio...");
     var audio = new Audio("./ts/dist/intro.mp3");
@@ -5,5 +6,5 @@ function playSound() {
         .play()
         .then(function () { return console.log("Audio played successfully!"); })["catch"](function (error) { return console.error("Error playing audio:", error); });
 }
-var playButton = document.querySelector("#play");
+var playButton = document.getElementById("play");
 playButton.addEventListener("click", playSound);
