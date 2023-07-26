@@ -12,7 +12,7 @@ var questionsArray = [
         questionText: "What is the capital city of Colombia?",
         answerA: "Buenos Aires",
         answerB: "Lima",
-        answerC: "Sao Paolo",
+        answerC: "São Paulo",
         answerD: "Bogota",
         correctAnswer: "Bogota"
     },
