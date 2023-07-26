@@ -1,22 +1,5 @@
 
 
-interface User {
-    userName: string;
-    password: string;
-    uid: string;
-}
-
-function generateUid(): string {
-    return Date.now().toString() + Math.random().toString(36).substr(2, 9);
-}
-
-const player1: User = {
-    userName: "LeeDee",
-    password: "Oscar123",
-    uid: generateUid(),
-
-}
-
 interface Question {
     id: string;
     questionText: string;

@@ -1,11 +1,3 @@
-function generateUid() {
-    return Date.now().toString() + Math.random().toString(36).substr(2, 9);
-}
-var player1 = {
-    userName: "LeeDee",
-    password: "Oscar123",
-    uid: generateUid()
-};
 var questionsArray = [
     {
         id: "1",
