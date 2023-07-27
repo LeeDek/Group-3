@@ -8,9 +8,9 @@
 
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
-let stage = 0;
+let stage:number = 0;
 
-function checkAnswer(questionId: string, userAnswer: string): boolean {
+function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const question = questionsArray.find(q => q.id === questionId);
 
     if (!question) {
@@ -27,19 +27,4 @@ function checkAnswer(questionId: string, userAnswer: string): boolean {
         return false;
     }
 }
-
-const userAnswer = "Bogota";
-const isAnswerCorrect = checkAnswer("1", userAnswer);
-
-if (isAnswerCorrect) {
-    console.log("Congratulations! Your answer is correct.");
-} else {
-    console.log("Oops! Your answer is incorrect.");
-}
-
-console.log("Current stage:", stage);
-
-//handleWin function - מה קורה כשנבחרה תשובה נכונה
-
-//handleLose function - מה קורה כשנבחרה תשובה לא נכונה
 

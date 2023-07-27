@@ -19,14 +19,3 @@ function checkAnswer(questionId, userAnswer) {
         return false;
     }
 }
-var userAnswer = "Bogota";
-var isAnswerCorrect = checkAnswer("1", userAnswer);
-if (isAnswerCorrect) {
-    console.log("Congratulations! Your answer is correct.");
-}
-else {
-    console.log("Oops! Your answer is incorrect.");
-}
-console.log("Current stage:", stage);
-//handleWin function - מה קורה כשנבחרה תשובה נכונה
-//handleLose function - מה קורה כשנבחרה תשובה לא נכונה
