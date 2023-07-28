@@ -1,5 +1,5 @@
 
-const playButton = document.getElementById("play");
+const playButton = document.getElementById("play") as HTMLElement;
         playButton.addEventListener("click", () => {
             // Call the function to load the first question when the game starts
             loadNextQuestion();

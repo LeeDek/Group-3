@@ -8,23 +8,29 @@
 
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
-let stage:number = 0;
+let stage: number = 0;
 
 function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const question = questionsArray.find(q => q.id === questionId);
 
-    if (!question) {
-        throw new Error("Invalid question ID");
-    }
+    try {
 
-    const correctAnswer = question.correctAnswer;
+        if (!question) {
+            throw new Error("Invalid question ID");
+        }
 
-    if (userAnswer === correctAnswer) {
-        stage++;
-        return true;
-    } else {
-        stage--;
-        return false;
+        const correctAnswer = question.correctAnswer;
+
+        if (userAnswer === correctAnswer) {
+            stage++;
+            return true;
+        } else {
+            stage--;
+            return false;
+        }
+    } catch (error) {
+        console.error(error)
+
     }
 }
 

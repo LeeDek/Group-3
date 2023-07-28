@@ -6,16 +6,21 @@
 var stage = 0;
 function checkAnswer(questionId, userAnswer) {
     var question = questionsArray.find(function (q) { return q.id === questionId; });
-    if (!question) {
-        throw new Error("Invalid question ID");
+    try {
+        if (!question) {
+            throw new Error("Invalid question ID");
+        }
+        var correctAnswer = question.correctAnswer;
+        if (userAnswer === correctAnswer) {
+            stage++;
+            return true;
+        }
+        else {
+            stage--;
+            return false;
+        }
     }
-    var correctAnswer = question.correctAnswer;
-    if (userAnswer === correctAnswer) {
-        stage++;
-        return true;
-    }
-    else {
-        stage--;
-        return false;
+    catch (error) {
+        console.error(error);
     }
 }
