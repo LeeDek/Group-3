@@ -1,7 +1,7 @@
 // This function generates a six-digit ID number
 function idGenerator() {
     try {
-        return Math.floor(Math.random() * 1000000);
+        return "id-" + Math.floor(Math.random() * 1000000);
     }
     catch (error) {
         console.error(error);
