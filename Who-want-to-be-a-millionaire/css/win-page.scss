@@ -11,7 +11,7 @@ html {
     width: 100vw;
     height: 100vh;
 
-    @media (max-width:1200px) {
+    @media (max-width:1370px) {
         background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
         background-size: cover;
         background-color: rgb(110, 43, 226);
@@ -24,34 +24,45 @@ body {
 
 font-family:'Chakra Petch', sans-serif;
 text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
- font-size: 22px;
+font-size: 22px;
+color: white;
+text-align: center;
 
-.logo {
-    height: 10px;
-    margin: 1rem;
-    img {
-        width: 300px;
-        
-    }
+@media (max-width:1200px) {
+    font-size: 15px;
+    display: flex;
+    flex-flow:column ;
 }
 
-    .container-txt {
-    color: white;
-    text-align: center;
-    padding: 2rem;
-    
-    
-    h3{
-        padding-top: .7rem;
+
+
+.container {
+
+    &__headline {
+        
+            color: goldenrod;
+            font-size: 50px;
+            margin: 4rem;
+            text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.5);
+        
        
     }
+    
+    &__money {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        // margin-right: 8rem;
+        // margin-top: 1rem;
+        // margin-bottom: 2rem;
+       
 
-    .win{
+    .win {
         padding: .5rem;
         width: 150px;
         margin: auto;
         
-        p{
+        p {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -62,11 +73,8 @@ text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
             margin: .2rem;
             background-color: darkblue;
             opacity: 80%;
-            box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-           
+            box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);  
         }
-
-        
     }
 
     .mill {
@@ -83,10 +91,11 @@ text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
         opacity: 95%;
         box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
     }
-}  
+  
 #play {
     height: 50px;
     width: 200px;
+    margin: auto;
     color: #fff;
     background-color: rgb(97, 231, 19);
     border-radius: 25%;
@@ -103,5 +112,66 @@ text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
         font-size: larger;
     }
 }
+
+
+}
+}
+.question {
+
+    margin-left: 2rem;
+
+&__text {
+    width: 60vw;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin: auto;
+     margin-top: 15vh;
+     border-radius: 15%;
+     padding: .5rem;
+     display: flex;
+     background-color: darkblue;
+     opacity: 80%;
+     border: #fff solid 3px;  
+     
+ }
+
+ &__answers {
+     display: flex;
+     justify-content: center;
+     text-align: center;
+     margin: 2rem;
+     gap: 20px;
+    
+     
+     .a, .b, .c, .d {
+         
+         width: 35vh;
+         margin-bottom: .5rem;
+         border-radius: 15%;
+         padding: 10px;
+         border: #fff solid 3px;
+         background-color: darkblue;
+         opacity: 80%;
+     }
+
+     .d {
+         background-color: rgb(57, 235, 37);
+     }
+
+     #button {
+        font-family:'Chakra Petch', sans-serif;
+        color: white;
+        font-size: 22px;
+        background-color: transparent;
+        border: transparent;
+     }
+
+    }
+
+ }
+
+ 
+
 }
 }
