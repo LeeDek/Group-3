@@ -1,7 +1,7 @@
-//checking answers - פונקציה שבודקת אם המשתמש ענה נכון או לא  
+//checking answers - פונקציה שבודקת אם המשתמש ענה נכון או לא
 // handle result - היא מופעלת על פי מה שהתקבל בפונקציה למעלה  תנאי - TRUE|FALSE  פונקציה
-//-אם התשובה לא נכונה הפונקציה תפנה ל handle lose - המשחק נגמר 
-// אם התשובה נכונה - הפונקציה מפנה ל- habdle win והשחקן עולה שלב
+//-אם התשובה לא נכונה הפונקציה תפנה ל handle lose - המשחק נגמר
+// אם התשובה נכונה - הפונקציה מפנה ל- handle win והשחקן עולה שלב
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 var stage = 0;
 function checkAnswer(questionId, userAnswer) {
@@ -13,11 +13,12 @@ function checkAnswer(questionId, userAnswer) {
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
             stage++;
-            return true;
+            handleCurrectAnswer(stage);
+            //   return true;
         }
         else {
-            stage--;
-            return false;
+            handleLose();
+            //   return false;
         }
     }
     catch (error) {

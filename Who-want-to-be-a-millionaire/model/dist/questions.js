@@ -88,5 +88,13 @@ var questionsArray = [
         answerC: "North America",
         answerD: "South America",
         correctAnswer: "Asia"
-    }
+    },
 ];
+// interface Answers {
+//     uid: Question;
+//     questionName: string;
+// }
+// interface Stage {
+//     amount: number;
+//     totalAmount: number;
+// }
