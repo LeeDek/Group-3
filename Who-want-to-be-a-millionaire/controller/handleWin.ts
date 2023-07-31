@@ -31,6 +31,9 @@ function handleWin() {
     }
 }
 
+const answerElements: NodeListOf<HTMLParagraphElement> = document.querySelectorAll(".question__answers p");
+
+
 answerElements.forEach(answerElement => {
     answerElement.addEventListener("click", () => {
         try {
