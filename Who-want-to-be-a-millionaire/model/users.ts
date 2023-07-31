@@ -1,6 +1,4 @@
-interface User {
-  userName: string;
-  password: string;
-  uid: string;
+class User {
+  constructor(public userName: string, public password: string, public uid?: string|undefined) {}
 }
-const users: User[] = [];
+const users:User[] = [];
