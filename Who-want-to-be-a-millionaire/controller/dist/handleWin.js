@@ -29,3 +29,22 @@ function handleWin() {
         console.error(error);
     }
 }
+answerElements.forEach(function (answerElement) {
+    answerElement.addEventListener("click", function () {
+        try {
+            var userAnswer = answerElement.textContent;
+            var currentQuestionId = "question" + (stage + 1);
+            var isCorrect = checkAnswer(currentQuestionId, userAnswer);
+            if (isCorrect) {
+                handleWin();
+            }
+            else {
+                displayMessage("Incorrect answer! Game over.");
+                endGame();
+            }
+        }
+        catch (error) {
+            console.error(error);
+        }
+    });
+});

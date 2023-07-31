@@ -1,32 +1,30 @@
-function displayMessage(message) {
-    var messageElement = document.getElementById("message");
-    if (messageElement) {
-        messageElement.textContent = message;
-    }
-}
-var answerElements = document.querySelectorAll(".question__answers p");
-answerElements.forEach(function (answerElement) {
-    answerElement.addEventListener("click", function () {
-        try {
-            var userAnswer = answerElement.textContent;
-            var currentQuestionId = "question" + (stage + 1);
-            var isCorrect = checkAnswer(currentQuestionId, userAnswer);
-            if (isCorrect) {
-                displayMessage("Correct answer! Proceeding to the next question");
-                setTimeout(function () {
-                    loadNextQuestion();
-                }, 1500);
-            }
-            else {
-                displayMessage("Incorrect answer! Game over.");
-                endGame();
-            }
-        }
-        catch (error) {
-            console.error(error);
-        }
-    });
-});
+// function displayMessage(message: any) {
+//     const messageElement = document.getElementById("message");
+//     if (messageElement) {
+//         messageElement.textContent = message;
+//     }
+// }
+// const answerElements = document.querySelectorAll(".question__answers p");
+// answerElements.forEach(answerElement => {
+//     answerElement.addEventListener("click", () => {
+//         try {
+//             const userAnswer = answerElement.textContent;
+//             const currentQuestionId = "question" + (stage + 1);
+//             const isCorrect = checkAnswer(currentQuestionId, userAnswer);
+//             if (isCorrect) {
+//                 displayMessage("Correct answer! Proceeding to the next question");
+//                 setTimeout(() => {
+//                     loadNextQuestion();
+//                 }, 1500);
+//             } else {
+//                 displayMessage("Incorrect answer! Game over.");
+//                 endGame();
+//             }
+//         } catch (error) {
+//             console.error(error);
+//         }
+//     });
+// });
 //loadNextQuestion wes written in seperate file named loadNextQuestion.ts
 // function loadNextQuestion() {
 //     try {

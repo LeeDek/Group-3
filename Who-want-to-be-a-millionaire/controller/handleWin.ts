@@ -6,7 +6,6 @@ function displayMessage(message: any) {
     }
 }
 
-
 function handleWin() {
     try {
         if (stage === questionsArray.length - 1) {
@@ -31,3 +30,22 @@ function handleWin() {
         console.error(error);
     }
 }
+
+answerElements.forEach(answerElement => {
+    answerElement.addEventListener("click", () => {
+        try {
+            const userAnswer = answerElement.textContent;
+            const currentQuestionId = "question" + (stage + 1);
+            const isCorrect = checkAnswer(currentQuestionId, userAnswer);
+  
+            if (isCorrect) {
+                handleWin(); 
+            } else {
+                displayMessage("Incorrect answer! Game over.");
+                endGame();
+            }
+        } catch (error) {
+            console.error(error);
+        }
+    });
+  });
