@@ -30,32 +30,34 @@ answerElements.forEach(answerElement => {
 });
 
 
-function loadNextQuestion() {
-    try {
+//loadNextQuestion wes written in seperate file named loadNextQuestion.ts
+
+// function loadNextQuestion() {
+//     try {
 
 
-        if (stage < questionsArray.length) {
-            const currentQuestion: Question = questionsArray[stage];
+//         if (stage < questionsArray.length) {
+//             const currentQuestion: Question = questionsArray[stage];
 
-            // DOM manipulation id neede to update the question text and answer options
+//             // DOM manipulation id neede to update the question text and answer options
 
-            // for example:
+//             // for example:
 
-            // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
-            // document.querySelector(".a").textContent = currentQuestion.answerA;
-            // document.querySelector(".b").textContent = currentQuestion.answerB;
-            // document.querySelector(".c").textContent = currentQuestion.answerC;
-            // document.querySelector(".d").textContent = currentQuestion.answerD;
-        } else {
-            // No more questions, end the game or show the final score
-            endGame();
-        }
+//             // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+//             // document.querySelector(".a").textContent = currentQuestion.answerA;
+//             // document.querySelector(".b").textContent = currentQuestion.answerB;
+//             // document.querySelector(".c").textContent = currentQuestion.answerC;
+//             // document.querySelector(".d").textContent = currentQuestion.answerD;
+//         } else {
+//             // No more questions, end the game or show the final score
+//             endGame();
+//         }
 
-    } catch (error) {
-        console.error(error)
+//     } catch (error) {
+//         console.error(error)
 
-    }
-}
+//     }
+// }
 
 function endGame() {
     try {
