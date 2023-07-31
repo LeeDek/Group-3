@@ -35,7 +35,7 @@ answerElements.forEach(function (answerElement) {
             var currentQuestionId = "question" + (stage + 1);
             var isCorrect = checkAnswer(currentQuestionId, userAnswer);
             if (isCorrect) {
-                handleWin(); // Call the handleWin function
+                handleWin();
             }
             else {
                 displayMessage("Incorrect answer! Game over.");
