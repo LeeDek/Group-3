@@ -29,6 +29,7 @@ function handleWin() {
         console.error(error);
     }
 }
+var answerElements = document.querySelectorAll(".question__answers p");
 answerElements.forEach(function (answerElement) {
     answerElement.addEventListener("click", function () {
         try {
