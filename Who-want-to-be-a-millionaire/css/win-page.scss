@@ -69,7 +69,7 @@ text-align: center;
             padding: 2px;
             font-size: 18px;
             border: 1px solid #fff;
-            border-radius: 15%;
+            border-radius: 13%;
             margin: .2rem;
             background-color: darkblue;
             opacity: 80%;
@@ -118,7 +118,7 @@ text-align: center;
 }
 .question {
 
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 
 &__text {
     width: 60vw;
@@ -127,7 +127,7 @@ text-align: center;
      justify-content: center;
      margin: auto;
      margin-top: 15vh;
-     border-radius: 15%;
+     border-radius: 13%;
      padding: .5rem;
      display: flex;
      background-color: darkblue;
@@ -146,32 +146,46 @@ text-align: center;
      
      .a, .b, .c, .d {
          
-         width: 35vh;
+         width: 20vw;
+         padding: 20px;
          margin-bottom: .5rem;
-         border-radius: 15%;
+         border-radius: 13%;
          padding: 10px;
          border: #fff solid 3px;
          background-color: darkblue;
          opacity: 80%;
+
+         @media (max-width: 800px) {
+            
+                width: 120px;
+                margin-bottom: .5rem;
+                font-size: 18px;
+                
+            
+        }
      }
 
      .d {
          background-color: rgb(57, 235, 37);
+         height: 27px;
+         
+         
+         
      }
 
-     #button {
+     button, #button, #btn-incorrect {
         font-family:'Chakra Petch', sans-serif;
         color: white;
         font-size: 22px;
+        
         background-color: transparent;
         border: transparent;
+
+        
+    
      }
-
     }
-
+  
  }
-
- 
-
 }
 }
