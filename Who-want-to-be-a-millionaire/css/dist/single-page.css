@@ -117,14 +117,19 @@ html body .question__answers {
   margin: 2rem;
   gap: 20px;
 }
-html body .question__answers .a, html body .question__answers .b, html body .question__answers .c, html body .question__answers .d {
+html body .question__answers .answer {
   width: 35vh;
   border-radius: 12%;
   padding: 10px;
   border: #fff solid 3px;
   background-color: darkblue;
   opacity: 80%;
+  cursor: pointer;
+  color: #fff;
 }
-html body .question__answers .d {
+html body .question__answers .answer:hover {
+  background-color: #040470;
+}
+html body .question__answers .correct-answer {
   background-color: #39eb25;
 }

@@ -9,7 +9,6 @@
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
 let stage: number = 0;
-
 function checkAnswer(questionId: string, userAnswer: string | null): boolean {
   const question = questionsArray.find((q) => q.id === questionId);
 
