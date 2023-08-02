@@ -39,9 +39,16 @@ function checkUserExists(name, password) {
     }
 }
 function renderUsers() {
-    var html = "<div dir=\"rtl\" class=\"row\">\n    <div class=\"columna\">\n        <h1 class=\"heading\">   \u05D0\u05D9\u05D6\u05D4 \u05DB\u05D9\u05E3 \u05E9\u05E0\u05E8\u05E9\u05DE\u05EA \u05D0\u05DC\u05D9\u05E0\u05D5 " + (users.length > 0 ? users[users.length - 1].userName : '') + " </h1> \n           <p class=\"p\"> \u05DE\u05D4\u05D9\u05D5\u05DD \u05DE\u05EA\u05D7\u05D9\u05DC\u05D9\u05DD \u05DC\u05E2\u05E9\u05D5\u05EA \u05E1\u05D3\u05E8 \u05D1\u05D7\u05E9\u05D1\u05D5\u05DF \u05D4\u05D1\u05E0\u05E7 ! </p>\n          <button class=\"button\" onclick=\"document.location='../home-page/homepage.html'\">\u05DB\u05E0\u05D9\u05E1\u05D4 ></button>\n      </div>\n          </div>";
+    // יש לוודא קיום של אלמנט עם ה-id #rootName בדף
     var nameRoot = document.querySelector('#rootName');
-    if (!nameRoot)
-        throw new Error('couldnt find rootPersons html element');
-    nameRoot.innerHTML = html;
+    if (!nameRoot) {
+        throw new Error('Could not find #rootName element');
+    }
+    // בדיקה אם יש לך משתנה users והוא לא ריק, ואז להשתמש בו
+    var userName = users.length > 0 ? users[users.length - 1].userName : '';
+    // בניית התבנית ה-HTML עם המשתנה userName
+    var html = "\n      <div dir=\"rtl\" class=\"row\">\n        <div class=\"background-iamge\">\n          <div class=\"container-txt\">\n            <h2 class=\"heading\">   \u05D0\u05D9\u05D6\u05D4 \u05DB\u05D9\u05E3 \u05E9\u05E0\u05E8\u05E9\u05DE\u05EA \u05D0\u05DC\u05D9\u05E0\u05D5 " + userName + "</h2> \n            <h3>Welcome to: Who Wants to Be a Millionaire?</h3>\n            <div class=\"mill\">\n              <p>$1 Million</p>\n            </div>\n            <div class=\"win\">\n              <p>$500,000</p>\n              <p>$250,000</p>\n              <p>$100,000</p>\n              <p>$50,000</p>\n              <p>$25,000</p>\n              <p>$15,000</p>\n              <p>$12,000</p>\n              <p>$10,000</p>\n              <p>$7,500</p>\n              <p>$5,000</p>\n              <p>$3,000</p>\n              <p>$2,000</p>\n              <p>$1,000</p>\n              <p>$500</p>\n            </div>\n            <button id=\"play\">Play</button>\n          </div>\n        </div>\n      </div>\n    ";
+    var newhtml = html;
+    // החלפת התוכן של האלמנט ב-#rootName עם התבנית החדשה
+    nameRoot.innerHTML = newhtml;
 }
