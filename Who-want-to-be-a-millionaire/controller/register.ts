@@ -59,11 +59,11 @@
       
     // בניית התבנית ה-HTML עם המשתנה userName
     const html = `
-      <div dir="rtl" class="row">
+      <div dir="ltr" class="row">
         <div class="background-iamge">
           <div class="container-txt">
-            <h2 class="heading">   איזה כיף שנרשמת אלינו ${userName}</h2> 
-            <h3>Welcome to: Who Wants to Be a Millionaire?</h3>
+            <h2 class="heading">   It's great that you signed up for it    ${userName}</h2> 
+            <h3>Welcome to: <br> Who Wants to Be a Millionaire?</h3>
             <div class="mill">
               <p>$1 Million</p>
             </div>
@@ -89,7 +89,17 @@
       </div>
     `;
     const newhtml = html 
+    
   
     // החלפת התוכן של האלמנט ב-#rootName עם התבנית החדשה
     nameRoot.innerHTML = newhtml;
+    // Add the event listener to the "Play" button
+  const playButton = nameRoot.querySelector('#play');
+  if (playButton) {
+    playButton.addEventListener('click', () => {
+      // Replace "YOUR_URL_HERE" with the URL of the page you want to navigate to
+      window.location.href = "../view/single-page.html";
+    });
   }
+}
+  

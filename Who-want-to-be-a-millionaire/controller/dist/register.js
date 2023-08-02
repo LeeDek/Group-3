@@ -47,8 +47,16 @@ function renderUsers() {
     // בדיקה אם יש לך משתנה users והוא לא ריק, ואז להשתמש בו
     var userName = users.length > 0 ? users[users.length - 1].userName : '';
     // בניית התבנית ה-HTML עם המשתנה userName
-    var html = "\n      <div dir=\"rtl\" class=\"row\">\n        <div class=\"background-iamge\">\n          <div class=\"container-txt\">\n            <h2 class=\"heading\">   \u05D0\u05D9\u05D6\u05D4 \u05DB\u05D9\u05E3 \u05E9\u05E0\u05E8\u05E9\u05DE\u05EA \u05D0\u05DC\u05D9\u05E0\u05D5 " + userName + "</h2> \n            <h3>Welcome to: Who Wants to Be a Millionaire?</h3>\n            <div class=\"mill\">\n              <p>$1 Million</p>\n            </div>\n            <div class=\"win\">\n              <p>$500,000</p>\n              <p>$250,000</p>\n              <p>$100,000</p>\n              <p>$50,000</p>\n              <p>$25,000</p>\n              <p>$15,000</p>\n              <p>$12,000</p>\n              <p>$10,000</p>\n              <p>$7,500</p>\n              <p>$5,000</p>\n              <p>$3,000</p>\n              <p>$2,000</p>\n              <p>$1,000</p>\n              <p>$500</p>\n            </div>\n            <button id=\"play\">Play</button>\n          </div>\n        </div>\n      </div>\n    ";
+    var html = "\n      <div dir=\"ltr\" class=\"row\">\n        <div class=\"background-iamge\">\n          <div class=\"container-txt\">\n            <h2 class=\"heading\">   It's great that you signed up for it    " + userName + "</h2> \n            <h3>Welcome to: <br> Who Wants to Be a Millionaire?</h3>\n            <div class=\"mill\">\n              <p>$1 Million</p>\n            </div>\n            <div class=\"win\">\n              <p>$500,000</p>\n              <p>$250,000</p>\n              <p>$100,000</p>\n              <p>$50,000</p>\n              <p>$25,000</p>\n              <p>$15,000</p>\n              <p>$12,000</p>\n              <p>$10,000</p>\n              <p>$7,500</p>\n              <p>$5,000</p>\n              <p>$3,000</p>\n              <p>$2,000</p>\n              <p>$1,000</p>\n              <p>$500</p>\n            </div>\n            <button id=\"play\">Play</button>\n          </div>\n        </div>\n      </div>\n    ";
     var newhtml = html;
     // החלפת התוכן של האלמנט ב-#rootName עם התבנית החדשה
     nameRoot.innerHTML = newhtml;
+    // Add the event listener to the "Play" button
+    var playButton = nameRoot.querySelector('#play');
+    if (playButton) {
+        playButton.addEventListener('click', function () {
+            // Replace "YOUR_URL_HERE" with the URL of the page you want to navigate to
+            window.location.href = "../view/single-page.html";
+        });
+    }
 }
