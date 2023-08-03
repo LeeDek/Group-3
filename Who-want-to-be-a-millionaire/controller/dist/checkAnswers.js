@@ -13,11 +13,11 @@ function checkAnswer(questionId, userAnswer) {
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
             stage++;
-            handleCurrectAnswer(stage);
+            loadNextQuestion();
             //   return true;
         }
         else {
-            handleLose();
+            endGame();
             //   return false;
         }
     }

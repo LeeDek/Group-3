@@ -21,10 +21,10 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
 
     if (userAnswer === correctAnswer) {
       stage++;
-      handleCurrectAnswer(stage);
+      loadNextQuestion();
       //   return true;
     } else {
-      handleLose();
+      endGame();
       //   return false;
     }
   } catch (error) {
