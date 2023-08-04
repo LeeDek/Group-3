@@ -1,15 +1,57 @@
+// let stage = 0; // Declare stage as a global variable
+
+// function loadNextQuestion() {
+//   try {
+//     if (stage < questionsArray.length) {
+//       const currentQuestion = questionsArray[stage];
+//       document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+
+//       const answerButtons = document.querySelectorAll(".answer");
+//       answerButtons[0].textContent = currentQuestion.answerA;
+//       answerButtons[1].textContent = currentQuestion.answerB;
+//       answerButtons[2].textContent = currentQuestion.answerC;
+//       answerButtons[3].textContent = currentQuestion.answerD;
+
+//       // Add event listeners to each answer button
+//       answerButtons.forEach((button) => {
+//         button.addEventListener("click", () => {
+//           checkAnswer(currentQuestion.id, button.textContent);
+//         });
+//       });
+
+//       stage++; // Increment the stage value
+//     } else {
+//       endGame();
+//     }
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+let stage = 0; // Declare stage as a global variable
+
 function loadNextQuestion() {
   try {
-    let stage = 1;
-    if (stage < questionsArray.length - 1) {
+    if (stage < questionsArray.length) {
       const currentQuestion = questionsArray[stage];
-      document.querySelector(".question__text h2").textContent =
-        currentQuestion.questionText;
-      document.querySelector(".a").textContent = currentQuestion.answerA;
-      document.querySelector(".b").textContent = currentQuestion.answerB;
-      document.querySelector(".c").textContent = currentQuestion.answerC;
-      document.querySelector(".d").textContent = currentQuestion.answerD;
-      stage++;
+      document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+
+      const answerButtons = document.querySelectorAll(".answer");
+      answerButtons[0].textContent = currentQuestion.answerA;
+      answerButtons[1].textContent = currentQuestion.answerB;
+      answerButtons[2].textContent = currentQuestion.answerC;
+      answerButtons[3].textContent = currentQuestion.answerD;
+
+      // Remove previous event listeners
+      answerButtons.forEach((button) => {
+        button.removeEventListener("click", answerButtonClickHandler);
+      });
+      
+      // Add new event listeners to each answer button
+      answerButtons.forEach((button) => {
+        button.addEventListener("click", answerButtonClickHandler);
+      });
+
+      stage++; // Increment the stage value
     } else {
       endGame();
     }
@@ -17,3 +59,13 @@ function loadNextQuestion() {
     console.error(error);
   }
 }
+
+function answerButtonClickHandler(event) {
+  const button = event.target;
+  const userAnswer = button.textContent;
+  const currentQuestion = questionsArray[stage - 1];
+  checkAnswer(currentQuestion.id, userAnswer);
+}
+
+
+

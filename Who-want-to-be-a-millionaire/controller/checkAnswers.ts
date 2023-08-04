@@ -20,8 +20,8 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const correctAnswer = question.correctAnswer;
 
     if (userAnswer === correctAnswer) {
-      stage++;
-      loadNextQuestion();
+  
+    loadNextQuestion();
       //   return true;
     } else {
       endGame();

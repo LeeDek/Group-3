@@ -12,7 +12,6 @@ function checkAnswer(questionId, userAnswer) {
         }
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
-            stage++;
             loadNextQuestion();
             //   return true;
         }
