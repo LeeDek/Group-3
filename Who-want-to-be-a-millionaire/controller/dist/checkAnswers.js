@@ -13,6 +13,7 @@ function checkAnswer(questionId, userAnswer) {
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
             stage++;
+            updateStageClimbing(stage);
             loadNextQuestion();
             //   return true;
         }

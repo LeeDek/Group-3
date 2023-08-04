@@ -21,6 +21,7 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
 
     if (userAnswer === correctAnswer) {
       stage++;
+      updateStageClimbing(stage);
       loadNextQuestion();
       //   return true;
     } else {
