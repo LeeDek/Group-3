@@ -24,6 +24,7 @@
 //   }
 // }
 var stage = 0; // Declare stage as a global variable
+var userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
     try {
         if (stage < questionsArray.length) {
@@ -52,9 +53,32 @@ function loadNextQuestion() {
         console.error(error);
     }
 }
+// function answerButtonClickHandler(event) {
+//   const button = event.target;
+//   const userAnswer = button.textContent;
+//   const currentQuestion = questionsArray[stage - 1];
+//   checkAnswer(currentQuestion.id, userAnswer);
+// }
 function answerButtonClickHandler(event) {
-    var button = event.target;
-    var userAnswer = button.textContent;
-    var currentQuestion = questionsArray[stage - 1];
-    checkAnswer(currentQuestion.id, userAnswer);
+    try {
+        var selectedAnswer = event.target.textContent;
+        userAnswer = selectedAnswer;
+        var currentQuestion = questionsArray[stage - 1];
+        var isCorrect = checkAnswer(currentQuestion.id, userAnswer);
+        if (isCorrect) {
+            // User answered correctly
+            console.log("Correct answer");
+            // Add your logic here for correct answer
+            loadNextQuestion();
+        }
+        else {
+            // User answered incorrectly
+            // Add your logic here for incorrect answer
+            endGame();
+        }
+        userAnswer = null;
+    }
+    catch (error) {
+        console.error(error);
+    }
 }

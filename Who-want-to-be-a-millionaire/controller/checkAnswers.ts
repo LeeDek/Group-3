@@ -8,11 +8,37 @@
 
 // correct answer - עולה שלב בסכום שנצבר + בסולם
 
-let stage: number = 0;
-function checkAnswer(questionId: string, userAnswer: string | null): boolean {
-  const question = questionsArray.find((q) => q.id === questionId);
+// let stage: number = 0;
+// function checkAnswer(questionId: string, userAnswer: string | null): boolean {
+//   const currentQuestion = questionsArray.find((question) => question.id === questionId);
+//   return userAnswer === currentQuestion.correctAnswer;
+//   const question = questionsArray.find((q) => q.id === questionId);
 
+//   try {
+//     if (!question) {
+//       throw new Error("Invalid question ID");
+//     }
+
+//     const correctAnswer = question.correctAnswer;
+
+//     if (userAnswer === correctAnswer) {
+  
+//       loadNextQuestion();
+//       //   return true;
+//     } else {
+//       endGame();
+//       //   return false;
+//     }
+//   } catch (error) {
+//     console.error(error);
+//   }
+// }
+let stage: number = 0;
+
+function checkAnswer(questionId: string, userAnswer: string | null): boolean {
   try {
+    const question = questionsArray.find((q) => q.id === questionId);
+
     if (!question) {
       throw new Error("Invalid question ID");
     }
@@ -20,14 +46,20 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const correctAnswer = question.correctAnswer;
 
     if (userAnswer === correctAnswer) {
-  
-    loadNextQuestion();
-      //   return true;
+      // User answered correctly
+      // Add your logic here for correct answer
+      console.log("Correct answer");
+      loadNextQuestion();
+      return true;
     } else {
+      // User answered incorrectly
+      // Add your logic here for incorrect answer
+      console.log("Incorrect answer");
       endGame();
-      //   return false;
+      return false;
     }
   } catch (error) {
     console.error(error);
+    return false;
   }
 }

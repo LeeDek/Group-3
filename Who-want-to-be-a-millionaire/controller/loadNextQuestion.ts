@@ -28,6 +28,7 @@
 //   }
 // }
 let stage = 0; // Declare stage as a global variable
+let userAnswer = null; // Initialize userAnswer
 
 function loadNextQuestion() {
   try {
@@ -50,6 +51,8 @@ function loadNextQuestion() {
       answerButtons.forEach((button) => {
         button.addEventListener("click", answerButtonClickHandler);
       });
+     
+
 
       stage++; // Increment the stage value
     } else {
@@ -60,12 +63,39 @@ function loadNextQuestion() {
   }
 }
 
+// function answerButtonClickHandler(event) {
+//   const button = event.target;
+//   const userAnswer = button.textContent;
+//   const currentQuestion = questionsArray[stage - 1];
+//   checkAnswer(currentQuestion.id, userAnswer);
+// }
+
 function answerButtonClickHandler(event) {
-  const button = event.target;
-  const userAnswer = button.textContent;
-  const currentQuestion = questionsArray[stage - 1];
-  checkAnswer(currentQuestion.id, userAnswer);
+  try {
+    const selectedAnswer = event.target.textContent;
+    userAnswer = selectedAnswer;
+    
+
+    const currentQuestion = questionsArray[stage - 1];
+    const isCorrect = checkAnswer(currentQuestion.id, userAnswer);
+    
+
+    if (isCorrect) {
+      // User answered correctly
+      console.log("Correct answer");
+      // Add your logic here for correct answer
+      loadNextQuestion();
+    } 
+   
+    else {
+      // User answered incorrectly
+      // Add your logic here for incorrect answer
+      endGame();
+    }
+    userAnswer = null; 
+
+  } catch (error) {
+    console.error(error);
+  }
 }
-
-
 
