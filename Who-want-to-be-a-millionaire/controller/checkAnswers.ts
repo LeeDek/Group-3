@@ -46,9 +46,8 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const correctAnswer = question.correctAnswer;
 
     if (userAnswer === correctAnswer) {
-      // User answered correctly
-      // Add your logic here for correct answer
-      console.log("Correct answer");
+      stage++;
+      updateStageClimbing(stage);
       loadNextQuestion();
       return true;
     } else {

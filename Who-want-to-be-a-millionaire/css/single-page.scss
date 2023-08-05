@@ -29,13 +29,8 @@ html {
     color: white;
     text-align: center;
 
-    
-
     .container {
-      &__headline {
-       
-      }
-
+     
       &__money {
         float: right;
         margin-right: 8rem;
@@ -76,8 +71,8 @@ html {
           opacity: 95%;
           box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
         }
+
         #Start {
-          
           padding: 5px;
           border-radius: 15%;
           font-size: 25px;
@@ -90,15 +85,18 @@ html {
           border-bottom-left-radius: 80px;
           border-bottom-right-radius: 80px;
           box-shadow: 5px -7px 10px rgba(255, 255, 255, 0.981);
-         
-         
-    }
+        }
+
+        .won {
+          background-color: rgb(52, 238, 10); 
+          font-weight: bold; 
         }
       }
+    }
 
-   
     .question {
      display: grid;
+     margin: 1rem;
 
       &__text {
         width: 60vw;
@@ -113,8 +111,6 @@ html {
         background-color: darkblue;
         opacity: 80%;
         border: #fff solid 3px;
-
-       
       }
  
 
@@ -141,17 +137,10 @@ html {
     @media (max-width: 1000px) {
     font-size: 15px;
     width: 220px;
-
-
-    }
-        }
-
-        // .correct-answer {
-        //   background-color: rgb(57, 235, 37);
-          
-        // }
-      }
-    }
+  }
+}
+}
+}
 
     @media (max-width: 1000px) {
       width: 50%;

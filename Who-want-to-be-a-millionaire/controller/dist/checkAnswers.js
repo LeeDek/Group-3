@@ -33,9 +33,8 @@ function checkAnswer(questionId, userAnswer) {
         }
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
-            // User answered correctly
-            // Add your logic here for correct answer
-            console.log("Correct answer");
+            stage++;
+            updateStageClimbing(stage);
             loadNextQuestion();
             return true;
         }

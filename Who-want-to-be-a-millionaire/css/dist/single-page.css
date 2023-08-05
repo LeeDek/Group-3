@@ -79,8 +79,13 @@ html body .container__money #Start {
   border-bottom-right-radius: 80px;
   box-shadow: 5px -7px 10px rgba(255, 255, 255, 0.981);
 }
+html body .container__money .won {
+  background-color: #34ee0a;
+  font-weight: bold;
+}
 html body .question {
   display: grid;
+  margin: 1rem;
 }
 html body .question__text {
   width: 60vw;
