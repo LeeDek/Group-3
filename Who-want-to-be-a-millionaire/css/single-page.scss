@@ -8,14 +8,14 @@ $fontSize: 20px;
 }
 
 html {
-  background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-image: url(https://i.ytimg.com/vi/7iYj4Z_PXLU/maxresdefault.jpg);
   background-size: cover;
   background-color: rgb(110, 43, 226);
   width: 100vw;
   height: 100vh;
 
   @media (max-width: 1370px) {
-    background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
+    background-image: url(https://cdn.wallpapersafari.com/52/43/Ck5fQ7.jpg);
     background-size: cover;
     background-color: rgb(110, 43, 226);
     width: 100vw;
@@ -151,3 +151,10 @@ html {
     }
   }
 }
+.message {
+  color: goldenrod;
+  font-size: 70px;
+  margin: 5rem;
+  height: 20px;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+ }

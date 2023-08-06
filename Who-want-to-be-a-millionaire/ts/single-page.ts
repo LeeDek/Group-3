@@ -16,6 +16,5 @@ function playSound() {
   }
 }
 
-
 const bodyElement = document.querySelector('body') as HTMLElement;
 bodyElement.addEventListener("mouseenter", playSound);
