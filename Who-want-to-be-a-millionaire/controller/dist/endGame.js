@@ -1,13 +1,14 @@
 function endGame() {
     try {
-        var messageElement = document.getElementById("message");
-        messageElement.textContent = "Game over!";
-        var currentQuestion = questionsArray[stage - 1];
-        var correctAnswer = currentQuestion.correctAnswer;
-        messageElement.textContent += " The correct answer was: " + correctAnswer;
-        stage = 0;
-        var playButton = document.getElementById("play");
-        playButton.style.display = "block";
+        window.location.replace("./game-over.html");
+        // const messageElement = document.getElementById("message") as HTMLElement;
+        // messageElement.textContent = "Game over!";
+        // const currentQuestion = questionsArray[stage];
+        // const correctAnswer = currentQuestion.correctAnswer;
+        // messageElement.textContent += " The correct answer was: " + correctAnswer;
+        // // stage = 0;
+        // const playButton = document.getElementById("play") as HTMLElement;
+        // playButton.style.display = "block";
     }
     catch (error) {
         console.error(error);
