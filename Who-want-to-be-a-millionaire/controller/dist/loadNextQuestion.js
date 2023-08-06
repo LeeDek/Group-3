@@ -23,18 +23,22 @@
 //     console.error(error);
 //   }
 // }
-var stage = 0; // Declare stage as a global variable
+// let stage = 1; // Declare stage as a global variable
 var userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
     try {
-        if (stage < questionsArray.length) {
-            var currentQuestion = questionsArray[stage];
-            document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+        if (stage < questionsArray.length - 1 || stage === 9) {
+            // const currentQuestion = questionsArray[stage+1];
+            // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+            if (stage === 9) {
+                handleWin();
+            }
             var answerButtons = document.querySelectorAll(".answer");
-            answerButtons[0].textContent = currentQuestion.answerA;
-            answerButtons[1].textContent = currentQuestion.answerB;
-            answerButtons[2].textContent = currentQuestion.answerC;
-            answerButtons[3].textContent = currentQuestion.answerD;
+            // answerButtons[0].textContent = currentQuestion.answerA;
+            // answerButtons[1].textContent = currentQuestion.answerB;
+            // answerButtons[2].textContent = currentQuestion.answerC;
+            // answerButtons[3].textContent = currentQuestion.answerD;
+            renderQuestions();
             // Remove previous event listeners
             answerButtons.forEach(function (button) {
                 button.removeEventListener("click", answerButtonClickHandler);
@@ -42,6 +46,7 @@ function loadNextQuestion() {
             // Add new event listeners to each answer button
             answerButtons.forEach(function (button) {
                 button.addEventListener("click", answerButtonClickHandler);
+                // answerButtonClickHandler.stopImmediatePropagation();
             });
             stage++; // Increment the stage value
         }
@@ -70,6 +75,7 @@ function answerButtonClickHandler(event) {
             console.log("Correct answer");
             // Add your logic here for correct answer
             loadNextQuestion();
+            event.stopImmediatePropagation();
         }
         else {
             // User answered incorrectly

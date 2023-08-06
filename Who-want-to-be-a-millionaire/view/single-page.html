@@ -13,6 +13,10 @@
   <link rel="stylesheet" href="../css/dist/single-page.css" />
   <!-- <script src="../ts/dist/single-page.js" defer></script> -->
   <script src="../controller/dist/register.js" defer></script>
+  <script src="../ts/dist/win-page.js" defer></script>
+  <script src="../controller/dist/handleWin.js" defer></script>
+  <script src="./dist/renderFirstQuestion.js" defer></script>
+  <script src="../controller/dist/endGame.js" defer></script>
   <script src="./dist/renderHeadline.js" defer></script>
   <script src="../model/dist/users.js" defer></script>
   <script src="../model/dist/questions.js" defer></script>
@@ -80,7 +84,8 @@
         <button onclick="checkAnswers(event)" class="answer">Bogota</button>
       </div>
       <div class="message" id="message"></div> -->
-  </div>
+  </div>    <canvas id="confetti"></canvas>
+
 </body>
 
 </html>
