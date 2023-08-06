@@ -28,10 +28,15 @@
 //   }
 // }
 let stage = 0; // Declare stage as a global variable
+let stage = 0; // Declare stage as a global variable
 let userAnswer = null; // Initialize userAnswer
 
 function loadNextQuestion() {
   try {
+    if (stage < questionsArray.length) {
+      const currentQuestion = questionsArray[stage];
+      document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
+
     if (stage < questionsArray.length) {
       const currentQuestion = questionsArray[stage];
       document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
@@ -55,7 +60,8 @@ function loadNextQuestion() {
         });
 =======
         button.addEventListener("click", answerButtonClickHandler);
->>>>>>> parent of 4ca365a (improvements)
+    // answerButtonClickHandler.stopImmediatePropagation();
+
       });
     
      
