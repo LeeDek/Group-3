@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,6 +12,10 @@
   <link rel="stylesheet" href="../css/dist/single-page.css" />
   <!-- <script src="../ts/dist/single-page.js" defer></script> -->
   <script src="../controller/dist/register.js" defer></script>
+  <script src="../ts/dist/win-page.js" defer></script>
+  <script src="../controller/dist/handleWin.js" defer></script>
+  <script src="./dist/renderFirstQuestion.js" defer></script>
+  <script src="../controller/dist/endGame.js" defer></script>
   <script src="./dist/renderHeadline.js" defer></script>
   <script src="../model/dist/users.js" defer></script>
   <script src="../model/dist/questions.js" defer></script>
@@ -23,9 +26,7 @@
   <script src="../controller/dist/stageClimbing.js"></script>
   <script src="../controller/dist/loadNextQuestion.js" defer></script>
   <script src="./dist/renderFirstQuestion.js" defer></script>
-
 </head>
-
 <body>
   <!-- <audio
       src="/Who-want-to-be-a-millionaire/audio/intro.mp3"
@@ -58,13 +59,11 @@
           <p class="win__amount">$2,000</p>
           <p class="win__amount">$1,000</p>
           <p class="win__amount">$500</p>
-
         </div>
         <p id="Start">Start</p>
       </div>
     </div>
   </div>
-
   <div class="question">
     <!-- <div class="question__text">
         <h2>What is the capital city of Colombia?</h2>
@@ -80,7 +79,6 @@
         <button onclick="checkAnswers(event)" class="answer">Bogota</button>
       </div>
       <div class="message" id="message"></div> -->
-  </div>
+  </div>    <canvas id="confetti"></canvas>
 </body>
-
 </html>

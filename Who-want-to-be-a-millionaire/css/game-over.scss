@@ -3,14 +3,12 @@
     padding: 0;
     user-select: none;
 }
-
 html {
     background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
     background-size: cover;
     background-color: rgb(110, 43, 226);
     width: 100vw;
     height: 100vh;
-
     @media (max-width:1370px) {
         background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
         background-size: cover;
@@ -18,26 +16,22 @@ html {
         width: 100vw;
         height: 100vh;
     }
-
-
 body {
-
+    height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
 font-family:'Chakra Petch', sans-serif;
 text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 font-size: 22px;
 color: white;
 text-align: center;
-
 @media (max-width:1200px) {
     font-size: 15px;
     display: flex;
     flex-flow:column ;
 }
-
-
-
 .container {
-
     &__headline {
         margin-top: 4rem;
        
@@ -49,7 +43,6 @@ text-align: center;
         margin-top: 6rem;
         margin-bottom: 2rem;
        
-
     .win {
         padding: .5rem;
         width: 150px;
@@ -69,7 +62,6 @@ text-align: center;
             box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);  
         }
     }
-
     .mill {
         display: flex;
         flex-flow: column;
@@ -95,8 +87,6 @@ text-align: center;
     cursor: pointer;
     text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
     font-size: larger;
-
-
     &:hover {
         background-color: rgb(136, 231, 81);
         box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.981);
@@ -104,15 +94,11 @@ text-align: center;
         font-size: larger;
     }
 }
-
-
 }
 }
 .question {
-
     margin-left: 2rem;
     margin-bottom: 2rem;
-
 &__text {
     width: 60vw;
      display: flex;
@@ -128,7 +114,6 @@ text-align: center;
      border: #fff solid 3px;  
      
  }
-
  &__answers {
      display: flex;
      justify-content: center;
@@ -146,7 +131,6 @@ text-align: center;
          background-color: darkblue;
          opacity: 80%;
      }
-
      .d {
          background-color: rgb(57, 235, 37);
      }
@@ -155,7 +139,6 @@ text-align: center;
     }
     }
  }
-
  .gameOver {
     color: goldenrod;
     font-size: 70px;
@@ -163,6 +146,5 @@ text-align: center;
     height: 20px;
     text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
  }
-
 }
 }

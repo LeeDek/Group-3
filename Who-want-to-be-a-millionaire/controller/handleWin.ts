@@ -1,21 +1,19 @@
-
 function displayMessage(message: any) {
     const messageElement = document.getElementById("message");
     if (messageElement) {
         messageElement.textContent = message;
     }
 }
-
 function handleWin() {
     try {
         if (stage === questionsArray.length - 1) {
             const messageElement = document.getElementById("message");
             if (messageElement) {
                 messageElement.textContent = "You Just Won a Million Dollars!";
+                confetti()
             }
-
             // Optionally, you can reset the game and show a "Play Again" button
-            stage = 0;
+            // stage = 0;
             const playButton = document.getElementById("play");
             if (playButton) {
                 playButton.style.display = "block";
@@ -30,9 +28,7 @@ function handleWin() {
         console.error(error);
     }
 }
-
 const answerElements: NodeListOf<HTMLParagraphElement> = document.querySelectorAll(".question__answers p");
-
 answerElements.forEach(answerElement => {
     answerElement.addEventListener("click", () => {
         try {
