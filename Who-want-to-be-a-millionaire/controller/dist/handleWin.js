@@ -10,10 +10,9 @@ function handleWin() {
             var messageElement = document.getElementById("message");
             if (messageElement) {
                 messageElement.textContent = "You Just Won a Million Dollars!";
-                confetti();
             }
             // Optionally, you can reset the game and show a "Play Again" button
-            // stage = 0;
+            stage = 0;
             var playButton = document.getElementById("play");
             if (playButton) {
                 playButton.style.display = "block";

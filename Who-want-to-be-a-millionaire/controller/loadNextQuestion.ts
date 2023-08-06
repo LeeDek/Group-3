@@ -49,9 +49,13 @@ function loadNextQuestion() {
       
       // Add new event listeners to each answer button
       answerButtons.forEach((button) => {
+<<<<<<< HEAD
         button.addEventListener("click", (answerButtonClickHandler) => {
       
         });
+=======
+        button.addEventListener("click", answerButtonClickHandler);
+>>>>>>> parent of 4ca365a (improvements)
       });
     
      

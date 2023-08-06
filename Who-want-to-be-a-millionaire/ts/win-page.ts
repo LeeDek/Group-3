@@ -1,5 +1,4 @@
 const button = document.querySelector('#button') as HTMLElement;
-function confetti(){
 const canvas = document.querySelector('#confetti');
 
 const jsConfetti = new JSConfetti();
@@ -7,7 +6,7 @@ const jsConfetti = new JSConfetti();
 button.addEventListener('click', () => {
   jsConfetti.addConfetti()
 })
-}
+
 
 
 let audioWin: boolean = false;

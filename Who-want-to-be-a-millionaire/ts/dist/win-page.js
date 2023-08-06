@@ -1,11 +1,9 @@
 var button = document.querySelector('#button');
-function confetti() {
-    var canvas = document.querySelector('#confetti');
-    var jsConfetti = new JSConfetti();
-    button.addEventListener('click', function () {
-        jsConfetti.addConfetti();
-    });
-}
+var canvas = document.querySelector('#confetti');
+var jsConfetti = new JSConfetti();
+button.addEventListener('click', function () {
+    jsConfetti.addConfetti();
+});
 var audioWin = false;
 function playSound(soundPath) {
     if (!audioWin) {

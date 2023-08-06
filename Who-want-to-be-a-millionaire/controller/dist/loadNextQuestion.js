@@ -41,8 +41,12 @@ function loadNextQuestion() {
             });
             // Add new event listeners to each answer button
             answerButtons.forEach(function (button) {
+<<<<<<< HEAD
                 button.addEventListener("click", function (answerButtonClickHandler) {
                 });
+=======
+                button.addEventListener("click", answerButtonClickHandler);
+>>>>>>> parent of 4ca365a (improvements)
             });
             stage++; // Increment the stage value
         }
