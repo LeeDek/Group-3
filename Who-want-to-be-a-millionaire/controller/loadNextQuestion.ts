@@ -49,8 +49,11 @@ function loadNextQuestion() {
       
       // Add new event listeners to each answer button
       answerButtons.forEach((button) => {
-        button.addEventListener("click", answerButtonClickHandler);
+        button.addEventListener("click", (answerButtonClickHandler) => {
+      
+        });
       });
+    
      
 
 
@@ -77,7 +80,7 @@ function answerButtonClickHandler(event) {
     
 
     const currentQuestion = questionsArray[stage - 1];
-    const isCorrect = checkAnswer(currentQuestion.id, userAnswer);
+    const isCorrect = checkAnswer( currentQuestion.id, userAnswer);
     
 
     if (isCorrect) {

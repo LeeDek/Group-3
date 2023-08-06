@@ -45,7 +45,7 @@ html body .container__money .win p {
   padding: 2px;
   font-size: 20px;
   border: 1px solid #fff;
-  border-radius: 12%;
+  border-radius: 8px;
   margin: 0.2rem;
   background-color: darkblue;
   opacity: 80%;
@@ -67,7 +67,7 @@ html body .container__money .mill {
 }
 html body .container__money #Start {
   padding: 5px;
-  border-radius: 15%;
+  border-radius: 8px;
   font-size: 25px;
   font-weight: bold;
   margin-bottom: 4rem;
@@ -94,7 +94,7 @@ html body .question__text {
   justify-content: center;
   margin: auto;
   margin-top: 12vh;
-  border-radius: 12%;
+  border-radius: 8px;
   padding: 0.5rem;
   display: flex;
   background-color: darkblue;
@@ -110,7 +110,7 @@ html body .question__answers {
 }
 html body .question__answers .answer {
   width: 35vh;
-  border-radius: 12%;
+  border-radius: 8px;
   padding: 10px;
   border: #fff solid 3px;
   background-color: darkblue;

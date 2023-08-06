@@ -41,7 +41,8 @@ function loadNextQuestion() {
             });
             // Add new event listeners to each answer button
             answerButtons.forEach(function (button) {
-                button.addEventListener("click", answerButtonClickHandler);
+                button.addEventListener("click", function (answerButtonClickHandler) {
+                });
             });
             stage++; // Increment the stage value
         }
