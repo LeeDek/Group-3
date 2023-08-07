@@ -23,7 +23,7 @@
 //     console.error(error);
 //   }
 // }
-// let stage = 1; // Declare stage as a global variable
+let stage = 1; // Declare stage as a global variable
 let userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
   try {

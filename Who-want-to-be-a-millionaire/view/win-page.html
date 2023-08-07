@@ -31,9 +31,12 @@
     rel="stylesheet" />
   <title>who wants to be a millionaire?</title>
   <link rel="stylesheet" href="../css/dist/win-page.css" />
-
   <script src="../model/dist/questions.js" defer></script>
   <script src="../model/dist/users.js" defer></script>
+  <script src="../controller/dist/playButtonFunction.js"></script>
+  <script src="../controller/dist/playAgainButtonFunction.js" defer></script>
+  <script src="../view/dist/renderFirstQuestion.js"></script>
+  <script src="../controller/dist/loadNextQuestion.js"></script>
   <script src="../controller/dist/idGenerator.js" defer></script>
   <script src="../controller/dist/shufflesAnswers.js" defer></script>
   <script src="../controller/dist/randomAnswers.js" defer></script>
@@ -41,14 +44,16 @@
 </head>
 
 <body>
-  <audio src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3" id="audio" autoplay="autoplay"
-    preload="auto"></audio>
+  <audio src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3" id="audio" preload="auto"></audio>
   <div class="background-iamge">
     <div class="container">
       <div class="container__headline">
         <h2>You Just Won a Million Dollars!</h2>
       </div>
-      <div class="container__money">
+
+      <button id="playAgain">Play Again</button>
+
+      <!-- <div class="container__money">
         <div class="mill">
           <p>$1 Million</p>
         </div>
@@ -68,7 +73,7 @@
           <p>$1,000</p>
           <p>$500</p>
         </div>
-        <button id="play">Play</button>
+        
       </div>
     </div>
   </div>
@@ -90,11 +95,11 @@
         <p class="c">Lima</p>
       </button>
 
-      
+       -->
 
-      <button id="button" id="button-53" role="button">
+      <!-- <button id="button" id="button-53" role="button">
         <p class="d">Bogota</p>
-      </button>
+      </button> -->
     </div>
     <canvas id="confetti"></canvas>
 
@@ -105,6 +110,5 @@
 
 </body>
 <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-<script src="../ts/dist/win-page.js"></script>
 
 </html>

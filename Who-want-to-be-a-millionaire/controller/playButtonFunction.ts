@@ -6,3 +6,5 @@ const playButton = document.getElementById("play") as HTMLElement;
             // Optionally, you can also hide the "Play" button after starting the game
             playButton.style.display = "none";
         });
+
+

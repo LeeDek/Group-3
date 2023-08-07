@@ -7,17 +7,8 @@ function displayMessage(message) {
 function handleWin() {
     try {
         if (stage === questionsArray.length - 1) {
-            var messageElement = document.getElementById("message");
-            if (messageElement) {
-                messageElement.textContent = "You Just Won a Million Dollars!";
-                confetti();
-            }
-            // Optionally, you can reset the game and show a "Play Again" button
-            // stage = 0;
-            var playButton = document.getElementById("play");
-            if (playButton) {
-                playButton.style.display = "block";
-            }
+            // Move to the win-page when the user wins
+            window.location.replace("./win-page.html");
         }
         else {
             displayMessage("Correct answer! Proceeding to the next question");
@@ -25,6 +16,34 @@ function handleWin() {
                 loadNextQuestion();
             }, 1500);
         }
+        // if (stage === questionsArray.length - 1) {
+        //     const mainPage = document.getElementById("single-page");
+        //     const winPage = document.getElementById("win-page");
+        //     if (mainPage && winPage) {
+        //       mainPage.style.display = "none";
+        //       winPage.style.display = "block";
+        //     }
+        //     const messageElement = document.getElementById("message");
+        //     if (messageElement) {
+        //         messageElement.textContent = "You Just Won a Million Dollars!";
+        //         confetti()
+        //     }
+        //     const audioElement = document.getElementById("audio");
+        //     if (audioElement) {
+        //       audioElement.play();
+        //     }
+        //     // Optionally, you can reset the game and show a "Play Again" button
+        stage = 0;
+        var playButton = document.getElementById("play");
+        if (playButton) {
+            playButton.style.display = "block";
+        }
+        // } else {
+        //     displayMessage("Correct answer! Proceeding to the next question");
+        //     setTimeout(() => {
+        //         loadNextQuestion();
+        //     }, 1500);
+        // }
     }
     catch (error) {
         console.error(error);
