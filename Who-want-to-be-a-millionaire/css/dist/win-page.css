@@ -42,5 +42,12 @@ html body .container__headline {
 }
 html body #playAgain {
   margin: auto;
+  padding: 10px;
+  border-radius: 12%;
   background-color: goldenrod;
+  font-size: 15px;
+}
+html body #playAgain:hover {
+  background-color: #b68712;
+  font-weight: bolder;
 }
