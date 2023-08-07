@@ -73,7 +73,7 @@ html body .container__money #Start {
   margin-bottom: 4rem;
   border: 1px white solid;
   background-color: darkblue;
-  color: gold;
+  color: goldenrod;
   opacity: 70%;
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
@@ -118,6 +118,10 @@ html body .question__answers .answer {
   cursor: pointer;
   color: #fff;
   font-size: 20px;
+}
+html body .question__answers .answer:hover {
+  background-color: orange;
+  font-weight: bold;
 }
 @media (max-width: 1000px) {
   html body .question__answers .answer {

@@ -33,11 +33,11 @@ function handleWin() {
         //       audioElement.play();
         //     }
         //     // Optionally, you can reset the game and show a "Play Again" button
-        stage = 0;
-        var playButton = document.getElementById("play");
-        if (playButton) {
-            playButton.style.display = "block";
-        }
+        // stage = 0;
+        // const playButton = document.getElementById("play");
+        // if (playButton) {
+        //     playButton.style.display = "block";
+        // }
         // } else {
         //     displayMessage("Correct answer! Proceeding to the next question");
         //     setTimeout(() => {

@@ -18,7 +18,7 @@ if (playAgainButton) {
     }
 
     // Call the function to load the first question when the game starts again
-    loadNextQuestion();
+    
 
     
   });

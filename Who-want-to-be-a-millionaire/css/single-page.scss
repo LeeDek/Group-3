@@ -1,5 +1,7 @@
 $radius: 12%;
 $fontSize: 20px;
+$gold: goldenrod;
+$questionbg: darkblue;
 
 * {
   margin: 0;
@@ -67,7 +69,7 @@ html {
           border-top-left-radius: 80px;
           border-top-right-radius: 80px;
           border: 0.5px solid #fff;
-          background-color: goldenrod;
+          background-color: $gold;
           opacity: 95%;
           box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
         }
@@ -79,8 +81,8 @@ html {
           font-weight: bold;
           margin-bottom: 4rem;
           border: 1px white solid;
-          background-color: darkblue;
-          color: gold;
+          background-color: $questionbg;
+          color: $gold;
           opacity: 70%;
           border-bottom-left-radius: 80px;
           border-bottom-right-radius: 80px;
@@ -108,7 +110,7 @@ html {
         border-radius: $radius;
         padding: 0.5rem;
         display: flex;
-        background-color: darkblue;
+        background-color: $questionbg;
         opacity: 80%;
         border: #fff solid 3px;
       }
@@ -127,11 +129,16 @@ html {
           border-radius: 12%;
           padding: 10px;
           border: #fff solid 3px;
-          background-color: darkblue;
+          background-color: $questionbg;
           opacity: 80%;
           cursor: pointer;
           color: #fff;
          font-size: $fontSize;
+
+         &:hover {
+          background-color: orange;
+          font-weight: bold;
+         }
 
          
     @media (max-width: 1000px) {
@@ -152,7 +159,7 @@ html {
   }
 }
 .message {
-  color: goldenrod;
+  color: $gold;
   font-size: 80px;
   font-weight: bold;
   margin: 5rem;

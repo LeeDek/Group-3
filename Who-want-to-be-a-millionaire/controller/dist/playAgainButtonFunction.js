@@ -13,6 +13,5 @@ if (playAgainButton) {
             playButton.style.display = "block";
         }
         // Call the function to load the first question when the game starts again
-        loadNextQuestion();
     });
 }
