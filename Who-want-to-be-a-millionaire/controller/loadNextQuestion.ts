@@ -27,6 +27,7 @@ let stage = 1; // Declare stage as a global variable
 let userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
   try {
+    numberToWorder(questionsArray[i-1].id);
     if (stage < questionsArray.length +1) {
       // const currentQuestion = questionsArray[stage+1];
       // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
