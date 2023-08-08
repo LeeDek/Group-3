@@ -6,15 +6,15 @@ function displayMessage(message: any) {
 }
 function handleWin() {
     try {
-        if (stage === questionsArray.length - 1) {
+        // if (stage === questionsArray.length - 1) {
             // Move to the win-page when the user wins
             window.location.replace("./win-page.html");
-          } else {
-            displayMessage("Correct answer! Proceeding to the next question");
-            setTimeout(() => {
-              loadNextQuestion();
-            }, 1500);
-          }
+        //   } else {
+            // displayMessage("Correct answer! Proceeding to the next question");
+        //     setTimeout(() => {
+        //       loadNextQuestion();
+        //     }, 1500);
+        //   }
         // if (stage === questionsArray.length - 1) {
         //     const mainPage = document.getElementById("single-page");
         //     const winPage = document.getElementById("win-page");
