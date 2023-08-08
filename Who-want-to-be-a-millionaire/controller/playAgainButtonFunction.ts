@@ -1,25 +1,19 @@
 
 
 const playAgainButton = document.getElementById("playAgain");
-console.log("playAgainButton:", playAgainButton);
+
 if (playAgainButton) {
-  document.addEventListener("DOMContentLoaded", () => {
+  playAgainButton.addEventListener("click", () => {
+    // Reset the game to the initial state
     stage = 0;
-    playAgainButton.style.display = "block";
-    const winPage = document.getElementById("win-page");
-    if (winPage) {
-      winPage.style.display = "none";
-      
-    }
+    // Other logic to reset UI elements if needed
 
-    const playButton = document.getElementById("playAgain");
-    if (playButton) {
-      playButton.style.display = "block";
-    }
+    // Hide the playAgainButton
+    playAgainButton.style.display = "none";
 
-    // Call the function to load the first question when the game starts again
-    
+    // Display the start button again
+    window.location.href = " /Who-want-to-be-a-millionaire/view/single-page.html";
 
-    
+    // Optionally, reset any other UI elements or game state
   });
 }
