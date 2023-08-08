@@ -46,6 +46,7 @@ html body #playAgain {
   border-radius: 12%;
   background-color: goldenrod;
   font-size: 15px;
+  cursor: pointer;
 }
 html body #playAgain:hover {
   background-color: #b68712;

@@ -1,70 +1,59 @@
 $gold: goldenrod;
 * {
-    margin: 0;
-    padding: 0;
-    user-select: none;
+  margin: 0;
+  padding: 0;
+  user-select: none;
 }
 
 html {
-    background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-size: cover;
+  background-color: rgb(110, 43, 226);
+  width: 100vw;
+  height: 100vh;
+
+  @media (max-width: 1370px) {
+    background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
     background-size: cover;
     background-color: rgb(110, 43, 226);
     width: 100vw;
     height: 100vh;
+  }
 
-    @media (max-width:1370px) {
-        background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
-        background-size: cover;
-        background-color: rgb(110, 43, 226);
-        width: 100vw;
-        height: 100vh;
+  body {
+    font-family: "Chakra Petch", sans-serif;
+    text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+    font-size: 22px;
+    color: white;
+    text-align: center;
+
+    @media (max-width: 1200px) {
+      font-size: 15px;
+      display: flex;
+      flex-flow: column;
     }
 
-
-body {
-
-font-family:'Chakra Petch', sans-serif;
-text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-font-size: 22px;
-color: white;
-text-align: center;
-
-@media (max-width:1200px) {
-    font-size: 15px;
-    display: flex;
-    flex-flow:column ;
-}
-
-
-
-.container {
-
-    &__headline {
-        
-            color: $gold;
-            font-size: 50px;
-            margin: 4rem;
-            text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.5);
-        
-       
+    .container {
+      &__headline {
+        color: $gold;
+        font-size: 50px;
+        margin: 4rem;
+        text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.5);
+      }
     }
-    
- }
 
- #playAgain {
-    margin: auto;
-    padding: 10px;
-    border-radius: 12%;
-    background-color: goldenrod;
-    font-size: 15px;
-    
+    #playAgain {
+      margin: auto;
+      padding: 10px;
+      border-radius: 12%;
+      background-color: goldenrod;
+      font-size: 15px;
+      cursor: pointer;
 
-    &:hover {
+      &:hover {
         background-color: rgb(182, 135, 18);
         font-weight: bolder;
-
+      }
     }
- }
+  }
 }
-}
-
