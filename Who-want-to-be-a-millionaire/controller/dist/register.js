@@ -62,7 +62,7 @@ function renderUsers(usersArray) {
     if (playButton) {
         playButton.addEventListener("click", function () {
             // Replace "YOUR_URL_HERE" with the URL of the page you want to navigate to
-            window.location.href = "../view/single-page.html";
+            window.location.href = " /Who-want-to-be-a-millionaire/view/single-page.html";
         });
     }
 }

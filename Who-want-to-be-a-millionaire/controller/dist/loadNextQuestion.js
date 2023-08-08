@@ -27,10 +27,10 @@ var stage = 1; // Declare stage as a global variable
 var userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
     try {
-        if (stage < questionsArray.length - 1 || stage === 9) {
+        if (stage < questionsArray.length + 1) {
             // const currentQuestion = questionsArray[stage+1];
             // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
-            if (stage === 9) {
+            if (stage === 10) {
                 handleWin();
             }
             var answerButtons = document.querySelectorAll(".answer");
@@ -43,6 +43,7 @@ function loadNextQuestion() {
             answerButtons.forEach(function (button) {
                 button.removeEventListener("click", answerButtonClickHandler);
             });
+            displayMessage("Correct answer! Proceeding to the next question");
             // Add new event listeners to each answer button
             answerButtons.forEach(function (button) {
                 button.addEventListener("click", answerButtonClickHandler);
