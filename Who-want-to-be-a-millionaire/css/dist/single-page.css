@@ -38,6 +38,9 @@ html body .container__money .win {
   width: 150px;
   margin: auto;
 }
+html body .container__money .win__amount {
+  transition: 0.4s;
+}
 html body .container__money .win p {
   display: flex;
   flex-direction: column;
