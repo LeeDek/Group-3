@@ -32,7 +32,6 @@ html {
     text-align: center;
 
     .container {
-     
       &__money {
         float: right;
         margin-right: 8rem;
@@ -58,8 +57,8 @@ html {
             box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
           }
           .won {
-            background-color: rgb(52, 238, 10); 
-            font-weight: bold; 
+            background-color: rgb(52, 238, 10);
+            font-weight: bold;
           }
         }
 
@@ -92,14 +91,12 @@ html {
           border-bottom-right-radius: 80px;
           box-shadow: 5px -7px 10px rgba(255, 255, 255, 0.981);
         }
-
-        
       }
     }
 
     .question {
-     display: grid;
-     margin: 1rem;
+      display: grid;
+      margin: 1rem;
 
       &__text {
         width: 60vw;
@@ -115,7 +112,6 @@ html {
         opacity: 80%;
         border: #fff solid 3px;
       }
- 
 
       &__answers {
         display: flex;
@@ -123,7 +119,6 @@ html {
         text-align: center;
         margin-top: 1.5rem;
         gap: 20px;
-        
 
         .answer {
           width: 35vh;
@@ -134,28 +129,25 @@ html {
           opacity: 80%;
           cursor: pointer;
           color: #fff;
-         font-size: $fontSize;
+          font-size: $fontSize;
 
-         &:hover {
-          background-color: orange;
-          font-weight: bold;
-         }
+          &:hover {
+            background-color: orange;
+            font-weight: bold;
+          }
 
-         
-    @media (max-width: 1000px) {
-    font-size: 15px;
-    width: 220px;
-  }
-}
-}
-}
+          @media (max-width: 1000px) {
+            font-size: 15px;
+            width: 220px;
+          }
+        }
+      }
+    }
 
     @media (max-width: 1000px) {
       width: 50%;
       font-size: 17px;
       display: grid;
-
-
     }
   }
 }
@@ -166,4 +158,4 @@ html {
   margin: 5rem;
   height: 20px;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
- }
+}

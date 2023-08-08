@@ -38,12 +38,17 @@ function numberToWorder(number) {
     }
 }
 function updateStageClimbing(number) {
-    var moneyLadder = document.querySelector("#" + number);
-    var allAmounts = document.querySelectorAll(".win__amount");
-    if (!moneyLadder)
-        throw new Error("No moneyadder");
-    allAmounts.forEach(function (amount) {
-        amount.classList.remove("won");
-    });
-    moneyLadder.classList.add("won");
+    try {
+        var moneyLadder = document.querySelector("#" + number);
+        var allAmounts = document.querySelectorAll(".win__amount");
+        if (!moneyLadder)
+            throw new Error("No moneyadder");
+        allAmounts.forEach(function (amount) {
+            amount.classList.remove("won");
+        });
+        moneyLadder.classList.add("won");
+    }
+    catch (error) {
+        console.error(error);
+    }
 }

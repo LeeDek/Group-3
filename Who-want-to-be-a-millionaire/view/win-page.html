@@ -1,64 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>who wants to be a millionaire?</title>
+    <link rel="stylesheet" href="../css/dist/win-page.css" />
+    <script src="../ts/dist/win-page.js" defer></script>
+    <script src="../controller/dist/idGenerator.js" defer></script>
+    <script src="../controller/dist/shufflesAnswers.js" defer></script>
+    <script src="../controller/dist/checkAnswers.js" defer></script>
+    <script src="../controller/dist/randomAnswers.js" defer></script>
+    <script src="../model/dist/questions.js" defer></script>
+    <script src="../model/dist/users.js" defer></script>
+    <script src="../controller/dist/handleWin.js"></script>
+    <script src="../controller/dist/handleWinHandleLose.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
-    rel="stylesheet" />
-  <title>who wants to be a millionaire?</title>
-  <link rel="stylesheet" href="../css/dist/win-page.css" />
-  <script src="../ts/dist/win-page.js" defer></script>
-  <script src="../controller/dist/idGenerator.js" defer></script>
-  <script src="../controller/dist/shufflesAnswers.js" defer></script>
-  <script src="../controller/dist/checkAnswers.js" defer></script>
-  <script src="../controller/dist/randomAnswers.js" defer></script>
-  <script src="../model/dist/questions.js" defer></script>
-  <script src="../model/dist/users.js" defer></script>
-  <script src="../controller/dist/handleWin.js"></script>
-  <script src="../controller/dist/handleWinHandleLose.js" defer></script>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>who wants to be a millionaire?</title>
+    <link rel="stylesheet" href="../css/dist/win-page.css" />
+    <script src="../model/dist/questions.js" defer></script>
+    <script src="../model/dist/users.js" defer></script>
+    <script src="../controller/dist/playButtonFunction.js"></script>
+    <script src="../controller/dist/playAgainButtonFunction.js" defer></script>
+    <script src="../controller/dist/loadNextQuestion.js"></script>
+    <script src="../controller/dist/idGenerator.js" defer></script>
+    <script src="../controller/dist/shufflesAnswers.js" defer></script>
+    <script src="../view/dist/renderFirstQuestion.js" defer></script>
+    <script src="../controller/dist/randomAnswers.js" defer></script>
+    <script src="../controller/dist/checkAnswers.js" defer></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
-    rel="stylesheet" />
-  <title>who wants to be a millionaire?</title>
-  <link rel="stylesheet" href="../css/dist/win-page.css" />
-  <script src="../model/dist/questions.js" defer></script>
-  <script src="../model/dist/users.js" defer></script>
-  <script src="../controller/dist/playButtonFunction.js"></script>
-  <script src="../controller/dist/playAgainButtonFunction.js" defer></script>
-  <script src="../controller/dist/loadNextQuestion.js"></script>
-  <script src="../controller/dist/idGenerator.js" defer></script>
-  <script src="../controller/dist/shufflesAnswers.js" defer></script>
-  <script src="../view/dist/renderFirstQuestion.js" defer></script>
-  <script src="../controller/dist/randomAnswers.js" defer></script>
-  <script src="../controller/dist/checkAnswers.js" defer></script>
-</head>
+  <body>
+    <audio
+      src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3"
+      id="audio"
+      autoplay="autoplay"
+      preload="auto"
+    ></audio>
+    <div class="background-iamge">
+      <div class="container">
+        <div class="container__headline">
+          <h2>You Just Won a Million Dollars!</h2>
+        </div>
+        <a href="./single-page.html">
+          <button id="playAgain">Play Again</button>
+        </a>
 
-<body>
-  <audio src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3" id="audio" preload="auto"></audio>
-  <div class="background-iamge">
-    <div class="container">
-      <div class="container__headline">
-        <h2>You Just Won a Million Dollars!</h2>
-
-      </div>
-      <a href="./single-page.html"> <button id="playAgain">Play Again</button>
-      </a>
-
-
-
-
-      <!-- <div class="container__money">
+        <!-- <div class="container__money">
         <div class="mill">
           <p>$1 Million</p>
         </div>
@@ -102,21 +105,29 @@
 
        -->
 
-      <!-- <button id="button" id="button-53" role="button">
+        <!-- <button id="button" id="button-53" role="button">
         <p class="d">Bogota</p>
       </button> -->
+      </div>
+      <canvas id="confetti"></canvas>
+
+      <!-- the confetti button should be the correct answer -->
     </div>
-    <canvas id="confetti"></canvas>
+    <div class="message" id="message"></div>
 
-
-    <!-- the confetti button should be the correct answer -->
-  </div>
-  <div class="message" id="message"></div>
-
-  <video id="audioPlayer" autoplay muted playsinline preload="auto" poster="/path-to-your-poster-image.jpg">
-    <source src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3" type="audio/mpeg">
-  </video>
-</body>
-<script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
-
+    <video
+      id="audioPlayer"
+      autoplay
+      muted
+      playsinline
+      preload="auto"
+      poster="/path-to-your-poster-image.jpg"
+    >
+      <source
+        src="/Who-want-to-be-a-millionaire/audio/won-one-million.mp3"
+        type="audio/mpeg"
+      />
+    </video>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </html>
