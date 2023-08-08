@@ -38,12 +38,14 @@ function loadNextQuestion() {
             // answerButtons[1].textContent = currentQuestion.answerB;
             // answerButtons[2].textContent = currentQuestion.answerC;
             // answerButtons[3].textContent = currentQuestion.answerD;
-            renderQuestions();
+            displayMessage("Correct answer! Proceeding to the next question");
+            setTimeout(function () {
+                renderQuestions();
+            }, 1500);
             // Remove previous event listeners
             answerButtons.forEach(function (button) {
                 button.removeEventListener("click", answerButtonClickHandler);
             });
-            displayMessage("Correct answer! Proceeding to the next question");
             // Add new event listeners to each answer button
             answerButtons.forEach(function (button) {
                 button.addEventListener("click", answerButtonClickHandler);
