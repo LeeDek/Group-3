@@ -51,6 +51,10 @@ html body .container__money .win p {
   opacity: 80%;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
 }
+html body .container__money .win .won {
+  background-color: #34ee0a;
+  font-weight: bold;
+}
 html body .container__money .mill {
   display: flex;
   flex-flow: column;
@@ -78,10 +82,6 @@ html body .container__money #Start {
   border-bottom-left-radius: 80px;
   border-bottom-right-radius: 80px;
   box-shadow: 5px -7px 10px rgba(255, 255, 255, 0.981);
-}
-html body .container__money .won {
-  background-color: #34ee0a;
-  font-weight: bold;
 }
 html body .question {
   display: grid;
