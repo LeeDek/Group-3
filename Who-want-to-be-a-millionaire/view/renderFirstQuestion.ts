@@ -23,9 +23,9 @@ function renderQuestions() {
   if (!rootHeadline) throw new Error("Could not find root element");
   const usersFromLocalStorage = getUsers();
 
-  rootHeadline.innerHTML = `<h2>hello ${
+  rootHeadline.innerHTML = `<h2>Hello ${
     usersFromLocalStorage[0].userName
-  }! you are in stage ${i + 1}!<br> ${dinamicText()}</h2>`;
+  }! you are now in stage ${i + 1}<br> ${dinamicText()}</h2>`;
   const rootQuestions = document.querySelector(".question");
   if (!rootQuestions) throw new Error("Could not find root element");
   rootQuestions.innerHTML = `<div class="question__text">
