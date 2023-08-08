@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  background-image: url(/Who-want-to-be-a-millionaire/images/match-stars-pc.jpg);
+  background-color: #6e2be2;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+}
+@media (max-width: 1000px) {
+  html {
+    background-image: url(/Who-want-to-be-a-millionaire/images/match-stars-mobile-final.jpg);
+    background-size: cover;
+    background-color: #6e2be2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+html body {
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 25px;
+}
+html body .question {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  margin-top: 25vh;
+  border-radius: 15%;
+  padding: 0.5rem;
+  display: flex;
+  background-color: darkblue;
+  opacity: 80%;
+  border: #fff solid 3px;
+}
+html body .answers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem;
+  gap: 20px;
+}
+html body .answers .a, html body .answers .b, html body .answers .c, html body .answers .d {
+  width: 40vh;
+  border-radius: 15%;
+  padding: 10px;
+  border: #fff solid 3px;
+  background-color: darkblue;
+  opacity: 80%;
+}
+html body .answers .d {
+  background-color: #39eb25;
+}
