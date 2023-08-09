@@ -12,6 +12,9 @@ function checkAnswer(questionId, userAnswer) {
         }
         var correctAnswer = question.correctAnswer;
         if (userAnswer === correctAnswer) {
+            if (stage === 10) {
+                handleWin();
+            }
             loadNextQuestion();
             //   return true;
         }

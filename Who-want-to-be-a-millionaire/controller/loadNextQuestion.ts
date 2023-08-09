@@ -27,13 +27,11 @@ let stage = 1; // Declare stage as a global variable
 let userAnswer = null; // Initialize userAnswer
 function loadNextQuestion() {
   try {
-    numberToWorder(questionsArray[i-1].id);
-    if (stage < questionsArray.length +1) {
+    numberToWorder(questionsArray[i - 1].id);
+    if (stage < questionsArray.length + 1) {
       // const currentQuestion = questionsArray[stage+1];
       // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
-if (stage===10){
-  handleWin();
-}
+
       const answerButtons = document.querySelectorAll(".answer");
       // answerButtons[0].textContent = currentQuestion.answerA;
       // answerButtons[1].textContent = currentQuestion.answerB;
@@ -41,23 +39,21 @@ if (stage===10){
       // answerButtons[3].textContent = currentQuestion.answerD;
       displayMessage("Correct answer! Proceeding to the next question");
       setTimeout(() => {
-        renderQuestions()
-
-            }, 1500);
+        renderQuestions();
+      }, 1500);
       // Remove previous event listeners
       answerButtons.forEach((button) => {
         button.removeEventListener("click", answerButtonClickHandler);
       });
-      
-     
+
       // Add new event listeners to each answer button
       answerButtons.forEach((button) => {
         button.addEventListener("click", answerButtonClickHandler);
-    // answerButtonClickHandler.stopImmediatePropagation();
+        // answerButtonClickHandler.stopImmediatePropagation();
       });
-     
+
       stage++; // Increment the stage value
-    } else{
+    } else {
       endGame();
     }
   } catch (error) {
@@ -74,24 +70,22 @@ function answerButtonClickHandler(event) {
   try {
     const selectedAnswer = event.target.textContent;
     userAnswer = selectedAnswer;
-    
+
     const currentQuestion = questionsArray[stage - 1];
     const isCorrect = checkAnswer(currentQuestion.id, userAnswer);
-    
+
     if (isCorrect) {
       // User answered correctly
       console.log("Correct answer");
       // Add your logic here for correct answer
       loadNextQuestion();
       event.stopImmediatePropagation();
-    } 
-   
-    else {
+    } else {
       // User answered incorrectly
       // Add your logic here for incorrect answer
       endGame();
     }
-    userAnswer = null; 
+    userAnswer = null;
   } catch (error) {
     console.error(error);
   }

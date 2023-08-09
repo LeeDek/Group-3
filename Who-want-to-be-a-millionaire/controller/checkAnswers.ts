@@ -20,7 +20,9 @@ function checkAnswer(questionId: string, userAnswer: string | null): boolean {
     const correctAnswer = question.correctAnswer;
 
     if (userAnswer === correctAnswer) {
-     
+      if (stage === 10) {
+        handleWin();
+      }
       loadNextQuestion();
       //   return true;
     } else {

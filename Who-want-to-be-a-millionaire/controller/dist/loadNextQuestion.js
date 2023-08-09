@@ -31,9 +31,6 @@ function loadNextQuestion() {
         if (stage < questionsArray.length + 1) {
             // const currentQuestion = questionsArray[stage+1];
             // document.querySelector(".question__text h2").textContent = currentQuestion.questionText;
-            if (stage === 10) {
-                handleWin();
-            }
             var answerButtons = document.querySelectorAll(".answer");
             // answerButtons[0].textContent = currentQuestion.answerA;
             // answerButtons[1].textContent = currentQuestion.answerB;
