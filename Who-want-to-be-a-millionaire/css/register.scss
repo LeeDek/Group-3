@@ -1,0 +1,105 @@
+*{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+body {
+display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(180deg, darkblue, rgb(0, 0, 0)), url('https://markh139.sg-host.com/media/2018-Who-Wants-To-Be-A-Millionaire-colour-corrected.jpg');
+    background-size: cover;
+    background-position: top;
+    background-blend-mode:color-dodge;
+  }
+  
+
+  
+  .heading{
+    color: #000000;
+    font-size: 1.3em;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.823);
+    padding: 10px 15px;
+    margin: 0em 5em 0em 5em;
+    font-weight: 800;
+    border-radius: 10px 10px 0px 0px;
+
+
+  }
+h2{
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.0em;
+  font-weight: 100;
+  background-color: rgb(0, 0, 0);
+  margin: -0.3em 6.5em 1em 6.5em;
+  padding: 0.5em 0em;
+  border-radius:0px 0px 10px 10px;
+
+
+
+
+}  h3 {
+    font-size: 1.0em;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: darkblue;
+    padding: 10px 15px;
+    opacity: 90%;
+    border-top: solid 1px white ;
+    margin: -0.3em 6.5em 1em 6.5em;
+
+
+
+  }
+  .form{
+    margin: 0px 50px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    background-color: #ffffff;
+    color: #000000;
+    border-radius: 8px;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .submit_full[type="submit"] {
+    background-color: #61e713;
+    color: #000000;
+    border-radius: 7px;
+    border: 1px solid white;
+    cursor: pointer;
+    text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    width: 105%;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ 
+  
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100%;
+      border-radius: 0;
+    }
+    .form {
+      margin-left: 4.0em;
+      margin-right: 5.0em;
+      
+  }
+  .heading {
+    margin: 2em 3em 0em 3em;
+}
+h2 {
+  margin: -0.3em 3.9em 1em 3.9em;
+}
+  }

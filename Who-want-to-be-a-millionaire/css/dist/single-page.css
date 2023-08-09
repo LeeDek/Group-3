@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  background-image: url(https://images.pling.com/img/00/00/62/66/55/1591974/9029a41626f2f3f389df10634b422ae37dd73379ba22e159bfa22c50df3b7c3c0cbb.jpg);
+  background-size: cover;
+  background-color: #6e2be2;
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 1000px) {
+  html {
+    display: flex;
+    flex-flow: column;
+    background-image: url(https://cdn.wallpapersafari.com/52/43/Ck5fQ7.jpg);
+    background-size: cover;
+    background-color: #6e2be2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+html body {
+  display: block;
+  block-size: auto;
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+html body .container__headline {
+  margin-top: 50px;
+}
+html body .container__money {
+  margin-right: 2rem;
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+html body .container__money .win {
+  padding: 0.5rem;
+  width: 150px;
+  margin: auto;
+}
+html body .container__money .win__amount {
+  transition: 0.4s;
+}
+html body .container__money .win p {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0.2rem;
+  padding: 2px;
+  font-size: 22px;
+  border: 1px solid #fff;
+  border-radius: 12%;
+  background-color: darkblue;
+  opacity: 80%;
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}
+html body .container__money .win .won {
+  background-color: #34ee0a;
+  font-weight: bold;
+}
+html body .container__money .mill {
+  display: flex;
+  flex-flow: column;
+  width: 160px;
+  padding: 7px;
+  margin: auto;
+  margin-top: 0.5rem;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  border: 0.5px solid #fff;
+  background-color: goldenrod;
+  opacity: 95%;
+  box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
+}
+html body .container__money #Start {
+  width: 130px;
+  margin-top: 5px;
+  padding: 5px;
+  border-radius: 15%;
+  font-size: 27px;
+  font-weight: bold;
+  margin-bottom: 4rem;
+  border: 1px white solid;
+  background-color: darkblue;
+  color: goldenrod;
+  opacity: 70%;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 30%;
+  box-shadow: 5px -7px 10px rgba(255, 255, 255, 0.981);
+}
+@media (min-width: 1000px) {
+  html body .container__money {
+    float: right;
+  }
+}
+@media (max-width: 900px) {
+  html body .question {
+    font-size: 16px;
+  }
+}
+html body .question__text {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  border-radius: 12%;
+  padding: 0.5rem;
+  display: flex;
+  background-color: darkblue;
+  opacity: 80%;
+  border: #fff solid 3px;
+}
+html body .question__answers {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.5rem;
+  gap: 20px;
+}
+html body .question__answers .answer {
+  width: 40vh;
+  border-radius: 12%;
+  padding: 10px;
+  border: #fff solid 3px;
+  background-color: darkblue;
+  opacity: 80%;
+  cursor: pointer;
+  color: #fff;
+  font-size: 22px;
+}
+html body .question__answers .answer:hover {
+  background-color: orange;
+  font-weight: bold;
+}
+@media (max-width: 900px) {
+  html body .question__answers .answer {
+    font-size: 20px;
+    width: 220px;
+  }
+}
+@media (min-width: 1000px) {
+  html body .question {
+    margin-top: 6rem;
+  }
+}
+
+.message {
+  color: goldenrod;
+  font-size: 60px;
+  font-weight: bold;
+  margin: 5rem;
+  height: 20px;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+}

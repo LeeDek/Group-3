@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+html {
+  background-image: url(/Who-want-to-be-a-millionaire/images/maxresdefault.jpg);
+  background-size: cover;
+  background-color: #6e2be2;
+  width: 100vw;
+  height: 100vh;
+}
+@media (max-width: 1370px) {
+  html {
+    background-image: url(/Who-want-to-be-a-millionaire/images/background-mobile.jpg);
+    background-size: cover;
+    background-color: #6e2be2;
+    width: 100vw;
+    height: 100vh;
+  }
+}
+html body {
+  font-family: "Chakra Petch", sans-serif;
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
+  color: white;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  html body {
+    font-size: 15px;
+    display: flex;
+    flex-flow: column;
+  }
+}
+html body .container__headline {
+  color: goldenrod;
+  font-size: 50px;
+  margin: 4rem;
+  text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.5);
+}
+html body #playAgain {
+  margin: auto;
+  padding: 10px;
+  border-radius: 12%;
+  background-color: goldenrod;
+  font-size: 15px;
+  cursor: pointer;
+}
+html body #playAgain:hover {
+  background-color: #b68712;
+  font-weight: bolder;
+}

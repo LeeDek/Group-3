@@ -23,6 +23,7 @@ html {
 html body {
   font-family: "Chakra Petch", sans-serif;
   text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
+  font-size: 22px;
 }
 html body .logo {
   height: 10px;
@@ -38,21 +39,21 @@ html body .container-txt {
 }
 html body .container-txt h3 {
   padding-top: 0.7rem;
-  font-size: 22px;
 }
 html body .container-txt .win {
   padding: 0.5rem;
-  width: 130px;
+  width: 150px;
   margin: auto;
 }
 html body .container-txt .win p {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1.5px;
+  padding: 2px;
+  font-size: 18px;
   border: 1px solid #fff;
-  border-radius: 8px;
-  margin: 0.3rem;
+  border-radius: 15%;
+  margin: 0.2rem;
   background-color: darkblue;
   opacity: 80%;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
@@ -60,7 +61,7 @@ html body .container-txt .win p {
 html body .container-txt .mill {
   display: flex;
   flex-flow: column;
-  width: 150px;
+  width: 160px;
   padding: 7px;
   margin: auto;
   margin-top: 1rem;
@@ -72,17 +73,19 @@ html body .container-txt .mill {
   box-shadow: 10px 10px 17px rgba(255, 255, 255, 0.981);
 }
 html body #play {
-  height: 45px;
+  height: 50px;
   width: 200px;
   color: #fff;
   background-color: #61e713;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 1px solid white;
   cursor: pointer;
   text-shadow: 1px 4px 5px rgba(0, 0, 0, 0.5);
+  font-size: larger;
 }
 html body #play:hover {
   background-color: #88e751;
   box-shadow: 2px 4px 6px rgba(255, 255, 255, 0.981);
   font-size: 17px;
+  font-size: larger;
 }
