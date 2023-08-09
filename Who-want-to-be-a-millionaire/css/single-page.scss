@@ -32,6 +32,9 @@ html {
     text-align: center;
 
     .container {
+      &__headline {
+        margin-top: 50px;
+      }
       &__money {
         float: right;
         margin-right: 8rem;
