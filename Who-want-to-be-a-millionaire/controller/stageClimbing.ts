@@ -1,5 +1,4 @@
 let number: string;
-let oldNumber: string;
 function numberToWorder(number: string) {
   try {
     switch (number) {
