@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>who wants to be a millionaire?</title>
+    <link rel="stylesheet" href="../css/dist/single-page.css" />
+    <script src="../model/dist/users.js" defer></script>
+    <script src="./controller/dist/mainPageLogic.js" defer></script>
+    <script src="./ts/dist/hp.js" defer></script>
+    <script src="../controller/dist/register.js" defer></script>
+    <script src="../ts/dist/win-page.js" defer></script>
+    <script src="../controller/dist/handleWin.js" defer></script>
+    <script src="./dist/renderHeadline.js" defer></script>
+    <script src="../model/dist/questions.js" defer></script>
+    <script src="./dist/renderFirstQuestion.js" defer></script>
+    <script src="../controller/dist/idGenerator.js" defer></script>
+    <script src="../controller/dist/shufflesAnswers.js" defer></script>
+    <script src="../controller/dist/randomAnswers.js" defer></script>
+    <script src="../controller/dist/checkAnswers.js" defer></script>
+    <script src="../controller/dist/stageClimbing.js"></script>
+    <script src="../controller/dist/loadNextQuestion.js" defer></script>
+    <script src="../controller/dist/endGame.js" defer></script>
+    <script src="../controller/dist/mainPageLogic.js" defer></script>
+    <script src="../controller/dist/stageClimbing.js" defer></script>
+  </head>
+  <body>
+    <audio
+      src="/Who-want-to-be-a-millionaire/audio/intro.mp3"
+      id="audio"
+      autoplay="autoplay"
+      preload="auto"
+    ></audio>
+    <div class="background-iamge">
+      <div class="container">
+        <div class="container__headline">
+          <!-- <h2>Hello Ziv</h2>
+          <h3>Welcome to: Who Wants to Be a Millionaire?</h3> -->
+        </div>
+        <div class="container__money">
+          <div class="mill">
+            <p>$1 Million</p>
+          </div>
+          <div class="win">
+            <p class="win__amount" id="nine">$500,000</p>
+            <p class="win__amount" id="eight">$250,000</p>
+            <p class="win__amount" id="seven">$100,000</p>
+            <p class="win__amount" id="six">$50,000</p>
+            <p class="win__amount" id="five">$25,000</p>
+            <p class="win__amount" id="four">$10,000</p>
+            <p class="win__amount" id="three">$5,000</p>
+            <p class="win__amount" id="two">$1,000</p>
+            <p class="win__amount" id="one">$500</p>
+            <p id="Start">Start</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="question"></div>
+    <canvas id="confetti"></canvas>
+    <div class="message" id="message"></div>
+  </body>
+</html>
