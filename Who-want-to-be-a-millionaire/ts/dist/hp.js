@@ -1,4 +1,4 @@
-// let audioPlayed: boolean = false; 
+// let audioPlayed: boolean = false;
 // function playSound() {
 //   if (!audioPlayed) {
 //     console.log("Trying to play audio...");
@@ -6,12 +6,13 @@
 //     audio.play()
 //       .then(() => {
 //         console.log("Audio played successfully!");
-//         audioPlayed = true; 
+//         audioPlayed = true;
 //         const bodyElement: HTMLBodyElement | null = document.querySelector('body');
-//         bodyElement.removeEventListener("mouseenter", playSound); 
+//         bodyElement.removeEventListener("mouseenter", playSound);
 //       })
 //       .catch(error => console.error("Error playing audio:", error));
 //   }
 // }
 // const bodyElement = document.querySelector('body') as HTMLElement;
 // bodyElement.addEventListener("mouseenter", playSound);
+checkRegister();
