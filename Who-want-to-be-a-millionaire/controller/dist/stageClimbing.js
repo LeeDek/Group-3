@@ -1,5 +1,5 @@
 var number;
-function numberToWorder(number) {
+function numberToWord(number) {
     try {
         switch (number) {
             case "1":
