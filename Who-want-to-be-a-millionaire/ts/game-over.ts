@@ -15,7 +15,6 @@ function playSound(soundPath: string) {
 
   } catch (error) {
     console.error(error)
-
   }
 }
 
