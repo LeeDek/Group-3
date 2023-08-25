@@ -17,7 +17,3 @@ function shufflesAnswers(answers: Array<Answer>) {
     console.error(error);
   }
 }
-//
-
-// // Answers
-// console.log(shufflesAnswers(numbers));

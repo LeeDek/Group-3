@@ -1,72 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <title>who wants to be a millionaire?</title>
-    <link rel="stylesheet" href="../css/dist/game-over.css"/>
-    <script src="../ts/dist/game-over.js" defer></script>
-    <script src="../controller/dist/idGenerator.js" defer></script>
-    <script src="../controller/dist/shufflesAnswers.js" defer></script>
-    <script src="../controller/dist/checkAnswers.js" defer></script>
-    <script src="../controller/dist/randomAnswers.js" defer></script>
-    <script src="../model/dist/questions.js" defer></script>
-    <script src="../model/dist/users.js" defer></script>
-  </head>
-  <body>
-    <audio src="/Who-want-to-be-a-millionaire/audio/wrong-anser.mp3" id="audio" autoplay="autoplay" preload="auto"></audio>
-    <div class="background-iamge">
-      <div class="container">
-      <div class="container__headline">
-        
-      </div>
-      <!-- <div class="container__money">
-        <div class="mill">
-          <p>$1 Million</p>
-        </div>
-        <div class="win">
-          <p>$500,000</p>
-          <p>$250,000</p>
-          <p>$100,000</p>
-          <p>$50,000</p>
-          <p>$25,000</p>
-          <p>$15,000</p>
-          <p>$12,000</p>
-          <p>$10,000</p>
-          <p>$7,500</p>
-          <p>$5,000</p>
-          <p>$3,000</p>
-          <p>$2,000</p>
-          <p>$1,000</p>
-          <p>$500</p>
-        </div> -->
-        <!-- <button id="play">Play</button> -->
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500&family=Quicksand:wght@300;400;500;600;700&family=Shantell+Sans:wght@300&display=swap"
+    rel="stylesheet" />
+  <title>who wants to be a millionaire?</title>
+  <link rel="stylesheet" href="../css/dist/game-over.css" />
+  <script src="../ts/dist/game-over.js" defer></script>
+  <script src="../controller/dist/idGenerator.js" defer></script>
+  <script src="../controller/dist/shufflesAnswers.js" defer></script>
+  <script src="../controller/dist/checkAnswers.js" defer></script>
+  <script src="../controller/dist/randomAnswers.js" defer></script>
+  <script src="../model/dist/questions.js" defer></script>
+  <script src="../model/dist/users.js" defer></script>
+</head>
+
+<body>
+  <audio src="/Who-want-to-be-a-millionaire/audio/wrong-anser.mp3" id="audio" autoplay="autoplay"
+    preload="auto"></audio>
+  <div class="background-iamge">
+    <div class="container">
+      <div class="container__headline"></div>
     </div>
   </div>
+
   <h2 class="gameOver">Game Over</h2>
-    <!-- <div class="question">
-      <div class="question__text">
-          <h2>What is the capital city of Colombia?</h2>
-      </div>
-      <div class="question__answers ab">
-          <p class="a">Buenos Aires</p>
-          <p class="b">São Paulo</p>
-      </div>
-      <div class="question__answers cd">
-          <p class="c">Lima</p>
-          <p class="d">Bogota</p>
-      </div>
-       -->
-      <div class="gameOverMessage" id="gameOverMessage"></div>
-      
-  </div>
-  
-  </body>
+
+  <div class="gameOverMessage" id="gameOverMessage"></div>
+
+</body>
+
 </html>
