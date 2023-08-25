@@ -36,7 +36,6 @@ html {
     text-align: center;
 
     .container {
-      
       &__headline {
         margin-top: 50px;
       }
@@ -44,7 +43,6 @@ html {
         margin-right: 2rem;
         margin-top: 6rem;
         margin-bottom: 2rem;
-
 
         .win {
           padding: 0.5rem;
@@ -54,6 +52,7 @@ html {
           &__amount {
             transition: 0.4s;
           }
+
           p {
             display: flex;
             flex-direction: column;
@@ -67,6 +66,7 @@ html {
             opacity: 80%;
             box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
           }
+
           .won {
             background-color: rgb(52, 238, 10);
             font-weight: bold;
@@ -106,10 +106,7 @@ html {
         }
         @media (min-width: 1000px) {
           float:right;
-    
-         
         }
-       
       }
     }
 
@@ -165,11 +162,10 @@ html {
        margin-top: 6rem;
        
       }
-
     }
-
   }
 }
+
 .message {
   color: $gold;
   font-size: 60px;
